@@ -1,1 +1,1 @@
-web: python app.py
+web: gunicorn shakes_on_the_beach.wsgi:application
