@@ -1,0 +1,45 @@
+@import url("https://fonts.googleapis.com/css2?family=Anton&family=Titillium+Web&display=swap");
+
+/*-------------------------Colours */
+
+/* Templates */
+
+.cinnabar {
+    color: #EC3630;
+}
+
+.skyblue {
+    color: #5FC9F9;
+}
+
+.sand {
+    color: #E0BC9C;
+}
+
+.babypink {
+    color: #F8C7CC;
+}
+
+.olive {
+    color: #9CB380;
+}
+
+.cinnabar-bg {
+    background-color: #EC3630;
+}
+
+.skyblue-bg {
+    background-color: #5FC9F9;
+}
+
+.sand-bg {
+    background-color: #E0BC9C;
+}
+
+.babypink-bg {
+    background-color: #F8C7CC;
+}
+
+.olive-bg {
+    background-color: #9CB380;
+}
