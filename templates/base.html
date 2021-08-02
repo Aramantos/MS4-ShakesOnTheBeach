@@ -2,56 +2,113 @@
 
 <!doctype html>
 <html lang="en">
-  <head>
 
-    {% block meta %}
-        <meta http-equiv="X-UA-Compatible" content="ie=edge">
-        <meta charset="UTF-8">
-        <meta name="description" content="Coding Bootcamp Python Project">
-        <meta name="keywords" content="HTML, CSS, JavaScript, Python">
-        <meta name="author" content="John Doyle">
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    {% endblock %}
+<head>
 
-    {% block extra_meta %}
-    {% endblock %}
+  {% block meta %}
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta charset="UTF-8">
+  <meta name="description" content="Coding Bootcamp Python Project">
+  <meta name="keywords" content="HTML, CSS, JavaScript, Python">
+  <meta name="author" content="John Doyle">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  {% endblock %}
 
-    {% block corecss %}
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato&display=swap">
-        <link rel="stylesheet" href="{% static 'css/base.css' %}">
-    {% endblock %}
+  {% block extra_meta %}
+  {% endblock %}
 
-    {% block extra_css %}
-    {% endblock %}
+  {% block corecss %}
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato&display=swap">
+  <link rel="stylesheet" href="{% static 'css/base.css' %}">
+  {% endblock %}
 
-    {% block corejs %}
-        <script src="https://kit.fontawesome.com/e9c73d7092.js" crossorigin="anonymous"></script>
-        <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
-        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-    {% endblock %}
+  {% block extra_css %}
+  {% endblock %}
 
-    {% block extra_js %}
-    {% endblock %}
+  {% block corejs %}
+  <script src="https://kit.fontawesome.com/d6c4500621.js" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+  </script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
+  </script>
+  {% endblock %}
 
-    <title>Shakes on the Beach {% block extra_title %}{% endblock %}</title>
-  </head>
-  <body>
-    <header class="container-fluid fixed-top"></header>
+  {% block extra_js %}
+  {% endblock %}
 
-    {% if messages %}
-        <div class="message-container"></div>
-    {% endif %}
+  <title>Shakes on the Beach {% block extra_title %}{% endblock %}</title>
+</head>
 
-    {% block page_header %}
-    {% endblock %}
+<body>
+  <header class="container-fluid fixed-top">
+    <div class="row sand-bg">
+      <div id="logo-title" class="col-12 col-lg-8 my-auto py-1 py-lg-0 text-center text-lg-left">
+        <a id="logo" href="{% url 'home' %}" class="nav-link cinnabar">
+          <i id="umbrella" class="fas fa-umbrella-beach display-4 float-lg-left"></i><h2 id="logo-text" class="logo-font my-4 cinnabar"> Shakes on the Beach</h2>
+        </a>
+      </div>
+      <div class="col-12 col-lg-4 my-auto py-1 py-lg-0">
+        <ul class="list-inline list-unstyled text-center text-lg-right my-0">
+          <li class="list-inline-item dropdown">
+            <a class="text-black nav-link" href="#" id="user-options" data-toggle="dropdown" aria-haspopup="true"
+              aria-expanded="false">
+              <div class="text-center">
+                <div><i class="fas fa-user fa-lg cinnabar"></i></div>
+                <p class="my-0 cinnabar">My Account</p>
+              </div>
+            </a>
+            <div class="dropdown-menu border-0 cinnabar" aria-labelledby="user-options">
+              {% if request.user.is_authenticated %}
+                {% if request.user.is_superuser %}
+                  <a href="" class="dropdown-item">Product Management</a>
+                {% endif %}
+                <a href="" class="dropdown-item">My Profile</a>
+                <a href="" class="dropdown-item">Order History</a>
+                <a href="{% url 'account_logout' %}" class="dropdown-item">Logout</a>
+              {% else %}
+                <a href="{% url 'account_signup' %}" class="dropdown-item">Register</a>
+                <a href="{% url 'account_login' %}" class="dropdown-item">Login</a>
+              {% endif %}
+            </div>
+          </li>
+          <li class="list-inline-item">
+            <a class="{% if grand_total %}text-info font-weight-bold{% else %}text-black{% endif %} nav-link" href="">
+              <div class="text-center">
+                <div><i class="fas fa-shopping-bag fa-lg cinnabar"></i></div>
+                <p class="my-0 cinnabar">
+                  {% if grand_total %}
+                    ${{ grand_total|floatformat:2 }}
+                  {% else %}
+                    $0.00
+                  {% endif %}
+                </p>
+              </div>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </header>
 
-    {% block content %}
-    {% endblock %}
+  {% if messages %}
+    <div class="message-container"></div>
+  {% endif %}
 
-    {% block postloadjs %}
-    {% endblock %}
-    
-  </body>
+  {% block page_header %}
+  {% endblock %}
+
+  {% block content %}
+  {% endblock %}
+
+  {% block postloadjs %}
+  {% endblock %}
+
+</body>
+
 </html>
