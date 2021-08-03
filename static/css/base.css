@@ -1,4 +1,5 @@
-@import url("https://fonts.googleapis.com/css2?family=Anton&family=Titillium+Web&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Anton&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
 
 /*-------------------------Colours */
 
@@ -55,7 +56,7 @@ body {
     background-size: cover;
     height: calc(100vh - 164px);
     color: #555;
-    font-family: 'Titillium';
+    font-family: 'Anton';
 }
 
 /* from Bulma */
@@ -71,11 +72,18 @@ body {
     padding: 8px 8px 0 0;
 }
 
+#logo,
+#logo h2{
+    color: white;
+    text-shadow: 2px 2px #000;
+}
+
 #logo:hover{
-    color: #F8C7CC;
+    color: #f8c7ec;
 }
 
 .logo-font {
+    font-family: 'Lobster';
     text-transform: uppercase;
 }
 
@@ -83,15 +91,63 @@ body {
     width: fit-content;
 }
 
+#user,
+#basket{
+    font-size: 2rem;
+    padding-bottom: 10px;
+    color: white;
+    text-shadow: 2px 2px #000;
+}
+
+#user-a div i:hover,
+#user-a div p:hover,
+#basket-a div i:hover,
+#basket-a div p:hover{
+    color: #f8c7ec;
+}
+
+#user-text,
+#basket-text{
+    letter-spacing: 1.5px;
+    font-size: 1.2rem;
+    color: white;
+    text-shadow: 2px 2px #000;
+}
+
+#open4business{
+    font-family: 'Anton';
+}
+
 .order-now-button {
     background: #E0BC9C;
     color: white;
     min-width: 260px;
+    font-size: 1.5rem;
+    letter-spacing: 1px;
+}
+
+.order-now-button:hover {
+    background: white;
+    color: #E0BC9C;
 }
 
 .btn-black {
     background: black;
     color: white;
+}
+
+.dropdown-menu{
+    background: white;
+    color: #E0BC9C;
+}
+
+.dropdown-item{
+    color: #E0BC9C;
+    letter-spacing: 1.5px;
+}
+
+.dropdown-item:hover{
+    color: #9c846e;
 }
 
 .order-now-button:hover,

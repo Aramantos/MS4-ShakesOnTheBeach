@@ -56,11 +56,11 @@
       <div class="col-12 col-lg-4 my-auto py-1 py-lg-0">
         <ul class="list-inline list-unstyled text-center text-lg-right my-0">
           <li class="list-inline-item dropdown">
-            <a class="text-black nav-link" href="#" id="user-options" data-toggle="dropdown" aria-haspopup="true"
+            <a id="user-a" class="text-black nav-link" href="#" id="user-options" data-toggle="dropdown" aria-haspopup="true"
               aria-expanded="false">
               <div class="text-center">
-                <div><i class="fas fa-user fa-lg cinnabar"></i></div>
-                <p class="my-0 cinnabar">My Account</p>
+                <div><i id="user" class="fas fa-user fa-lg cinnabar"></i></div>
+                <p id="user-text" class="my-0 cinnabar">My Account</p>
               </div>
             </a>
             <div class="dropdown-menu border-0 cinnabar" aria-labelledby="user-options">
@@ -78,10 +78,10 @@
             </div>
           </li>
           <li class="list-inline-item">
-            <a class="{% if grand_total %}text-info font-weight-bold{% else %}text-black{% endif %} nav-link" href="">
+            <a id="basket-a" class="{% if grand_total %}text-info font-weight-bold{% else %}text-black{% endif %} nav-link" href="">
               <div class="text-center">
-                <div><i class="fas fa-shopping-bag fa-lg cinnabar"></i></div>
-                <p class="my-0 cinnabar">
+                <div><i id="basket" class="fas fa-shopping-bag fa-lg cinnabar"></i></div>
+                <p id="basket-text" class="my-0 cinnabar">
                   {% if grand_total %}
                     ${{ grand_total|floatformat:2 }}
                   {% else %}
