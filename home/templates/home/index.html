@@ -1,5 +1,9 @@
 {% extends "base.html" %}
-{% load static %}≈ß
+{% load static %}
+
+{% block extra_js %}
+    <script src="{% static 'home/js/base.js' %}"></script>   
+{% endblock %}
 
 {% block page_header %}
     <div class="container header-container">

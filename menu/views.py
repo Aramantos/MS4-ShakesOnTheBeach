@@ -1,3 +1,15 @@
 from django.shortcuts import render
 
-# Create your views here.
+from .models import Product
+
+
+def menu(request):
+    """ A view to return the menu page """
+
+    menu = Product.objects.all()
+
+    context = {
+        'menu': menu,
+    }
+
+    return render(request, 'menu/menu.html', context)
