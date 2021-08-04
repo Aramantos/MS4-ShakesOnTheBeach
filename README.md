@@ -709,10 +709,39 @@ Create a file named **Procfile** to declare what commands are run by the applica
 
 Pictures
 
-- 
-- 
-- 
-- 
+- All photos with names ending in "-stock" in the media folder were taken from [shutterstock](https://www.shutterstock.com/)
+- Burgers
+  - [Cheese Burger](https://assets.epicurious.com/photos/5c745a108918ee7ab68daf79/master/pass/Smashburger-recipe-120219.jpg)
+  - [Bacon Cheese Burger](https://simply-delicious-food.com/wp-content/uploads/2015/07/Bacon-and-cheese-burgers-3-480x270.jpg)
+  - [The Hot Chick](https://www.recipetineats.com/wp-content/uploads/2017/07/Chicken-Burgers-4.jpg)
+  - [Grilled Jerk Chicken Burger](https://www.thepetitecook.com/wp-content/uploads/2018/04/Chicken-Burger-1.jpg)
+- Pizza
+  - [Meat Central](https://media-cdn.tripadvisor.com/media/photo-s/0b/38/d7/4e/meat-lovers-pizza.jpg)
+  - [Hawaiian Five OH!](https://i.ytimg.com/vi/dJ8gWah4axo/maxresdefault.jpg)
+  - [Hot Veggie](https://media-cdn.tripadvisor.com/media/photo-s/0e/bc/93/c6/four-star-pizza.jpg)
+  - [Hot Passion](https://previews.123rf.com/images/dedmityay/dedmityay1704/dedmityay170400020/75325776-fresh-hot-meat-pizza-in-a-box-delivery-of-fast-food-concept.jpg)
+- Sandwiches
+  - [BLT](https://images.immediate.co.uk/production/volatile/sites/30/2020/08/posh-blt-2c4aa27.jpg?quality=90&webp=true&resize=440,400)
+  - [Southern Fried Panini](https://www.rockrecipes.com/wp-content/uploads/2011/09/Fried-Chicken-Club-Sandwich-Panini-pn-a-wooden-cutting-board-with-coleslaw-in-background-1.jpg)
+  - [Veggie Ciabatta](https://4.bp.blogspot.com/-KxpMdpQ2a6w/UHH1TfrcH_I/AAAAAAAAA9E/QH3owDBDyik/s1600/IMG_2359.jpg)
+  - [Red Hot Wrap](https://i2.wp.com/studenteats.co.uk/wp-content/uploads/2015/07/student-eats-meals-recipes-16.jpg?fit=800%2C536&ssl=1)
+- Salads
+  - [Beetroot Relish](https://cdn.scrambledchefs.com/wp-content/uploads/2015/07/Beetroot-and-Feta-Cheese-Salad-_-Scrambled-Chefs-5.jpg)
+  - [Split pea Hummus](https://www.brewinghappiness.com/wp-content/uploads/2017/05/featured-image-3.jpg)
+  - [Baba Ghanoush](https://tarateaspoon.com/wp-content/uploads/2021/01/Loaded-Roasted-Veggie-Baba-Ganoush-close-horiz.jpeg)
+  - [Fijian Kokoda](https://i1.wp.com/nationalfoods.org/wp-content/uploads/2017/07/National-Dish-of-Fiji-Fijian-Kokoda-food.jpg?resize=640%2C480&ssl=1)
+- Shake
+  - [Chocolate Malt](https://thelemonbowl.com/wp-content/uploads/2017/06/Dark-Chocolate-Malt-with-Cinnamon-an-ice-cream-dessert-recipe.jpg)
+  - [Oreo Cookie Malt](https://thesaltymarshmallow.com/wp-content/uploads/2018/08/oreo-milkshakes2.jpg)
+  - [Peanut Butter Malt](https://storcpdkenticomedia.blob.core.windows.net/media/recipemanagementsystem/media/recipe-media-files/recipes/retail/x17/17932-double-chocolate-peanut-butter-malt-600x600.jpg?ext=.jpg)
+  - [Mint Chocolate Malt](https://realfood.tesco.com/media/images/RFO-MAIN-472x310-CSRMilkshake-7dcab72d-ac8c-4bd9-9bf6-e0ca0327acd6-0-472x310.jpg)
+  - [Nutella Malt](https://www.halfbakedharvest.com/wp-content/uploads/2015/08/Salted-Pretzel-Nutella-Fudge-Milkshake-with-Malted-Milk-Whipped-Cream-5.jpg)
+  - [Vanilla Malt](https://www.thespruceeats.com/thmb/RyfnsTX6chkOkwmJtT4j-NPe3pY=/2624x3936/filters:fill(auto,1)/vanilla-malted-milk-shake-recipe-909370-hero-01-5bdcc3e1c9e77c0051bb2a21.jpg)
+  - [Strawberry Malt](https://www.chelseasmessyapron.com/wp-content/uploads/2020/04/Strawberry-Milkshake-1.jpg)
+- Mineral
+  - [Soft Drinks](https://cdn-a.william-reed.com/var/wrbm_gb_food_pharma/storage/images/publications/food-beverage-nutrition/foodnavigator-asia.com/article/2018/03/29/soft-drink-health-concerns-not-yet-trickled-down-into-social-media-users-mentions-of-brands/7819019-1-eng-GB/Soft-drink-health-concerns-not-yet-trickled-down-into-social-media-users-mentions-of-brands.jpg)
+  - [Water](https://cdn3.evostore.io/productimages/vow_premium/l/lb0007.jpg)
+  - [Capri Sun](https://digitalcontent.api.tesco.com/v2/media/ghs/687d33aa-bd47-4052-8960-e04e8bea272a/snapshotimagehandler_120314822.jpeg?h=540&w=540)
 
 ### **Code Snippets**
 
