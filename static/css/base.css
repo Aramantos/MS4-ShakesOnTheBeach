@@ -68,17 +68,17 @@ body {
     width: 1.5rem;
 }
 
-#umbrella{
+#umbrella {
     padding: 8px 8px 0 0;
 }
 
 #logo,
-#logo h2{
+#logo h2 {
     color: white;
     text-shadow: 2px 2px #000;
 }
 
-#logo:hover{
+#logo:hover {
     color: #f8c7ec;
 }
 
@@ -92,7 +92,7 @@ body {
 }
 
 #user,
-#basket{
+#basket {
     font-size: 2rem;
     padding-bottom: 10px;
     color: white;
@@ -102,19 +102,19 @@ body {
 #user-a div i:hover,
 #user-a div p:hover,
 #basket-a div i:hover,
-#basket-a div p:hover{
+#basket-a div p:hover {
     color: #f8c7ec;
 }
 
 #user-text,
-#basket-text{
+#basket-text {
     letter-spacing: 1.5px;
     font-size: 1.2rem;
     color: white;
     text-shadow: 2px 2px #000;
 }
 
-#open4business{
+#open4business {
     font-family: 'Anton';
 }
 
@@ -136,25 +136,24 @@ body {
     color: white;
 }
 
-.dropdown-menu{
+.dropdown-menu {
     background: white;
     color: #E0BC9C;
 }
 
-.dropdown-item{
+.dropdown-item {
     color: #E0BC9C;
     letter-spacing: 1.5px;
 }
 
-.dropdown-item:hover{
+.dropdown-item:hover {
     color: #9c846e;
 }
 
 .order-now-button:hover,
 .order-now-button:active,
 .order-now-button:focus,
-.btn-black:hoorder
-.btn-black:active,
+.btn-black:hoorder .btn-black:active,
 .btn-black:focus {
     background: #222;
     color: white;
@@ -169,23 +168,22 @@ body {
 }
 
 .overlay {
-	height: 100%;
-	width: 100%;
-	top: 0;
-	left: 0;
-	position: fixed;
-	background: white;
-	z-index: -1;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    position: fixed;
+    background: white;
+    z-index: -1;
 }
 
-
-/* -------------------------------- Media Queries */
+/* ------------------------ Media Queries */
 
 /* Slightly larger container on xl screens */
 @media (min-width: 1200px) {
-  .container {
-    max-width: 80%;
-  }
+    .container {
+        max-width: 80%;
+    }
 }
 
 /* fixed top navbar only on medium and up */
@@ -217,5 +215,29 @@ body {
 
     body {
         height: calc(100vh - 116px);
+    }
+}
+
+@media (max-width: 767px) {
+    .header-container {
+        padding-top: 160px;
+    }
+}
+
+@media (max-width: 520px) {
+    .header-container {
+        padding-top: 175px;
+    }
+}
+
+@media (max-width: 450px) {
+    .header-container {
+        padding-top: 190px;
+    }
+}
+
+@media (max-width: 330px) {
+    .header-container {
+        padding-top: 230px;
     }
 }
