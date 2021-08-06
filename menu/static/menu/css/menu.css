@@ -1,0 +1,25 @@
+#menu{
+    color: darkred!important;
+    text-transform: uppercase;
+}
+
+#navbarNav{
+    justify-content: space-evenly!important;
+    letter-spacing: 1px;
+}
+
+.navbar-nav{
+    text-align: center;
+}
+
+.nav-item a{
+    color: white!important;
+    font-size: 1.5rem;
+    text-shadow: 2px 2px darkred;
+}
+
+.nav-item a:hover{
+    color: darkred!important;
+    font-size: 1.5rem;
+    text-shadow: 2px 2px white;
+}
