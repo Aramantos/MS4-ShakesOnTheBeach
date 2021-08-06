@@ -1,8 +1,12 @@
 {% extends "base.html" %}
 {% load static %}
 
+{% block extra_css %}
+    <link rel="stylesheet" href="{% static 'home/css/home.css' %}">>   
+{% endblock %}
+
 {% block extra_js %}
-    <script src="{% static 'home/js/base.js' %}"></script>   
+    <script src="{% static 'home/js/home.js' %}"></script>   
 {% endblock %}
 
 {% block page_header %}
@@ -16,8 +20,8 @@
 
 {% block content %}
     <div class="container h-100">
-        <div class="row h-100">
-            <div class="col-7 col-md-6 offset-md-6 my-auto">
+        <div id="home-text-container"  class="row h-100">
+            <div id="home-text" class="col-7 col-md-6 offset-md-6 my-auto">
                 <h1 id="open4business" class="display-4 logo-font text-right babypink">
                     We are open for business
                 </h1>

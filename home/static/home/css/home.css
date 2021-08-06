@@ -1,0 +1,14 @@
+#home-text-container{
+    display: flex;
+    justify-content: flex-end;
+}
+
+#home-text{
+    padding: 0;
+}
+
+@media (max-width: 600px) {
+    #home-text {
+        padding-right: 25px;
+    }
+}
