@@ -32,6 +32,7 @@ INSTALLED_APPS = [
     # Custom apps
     'home',
     'menu',
+    'basket',
 ]
 
 MIDDLEWARE = [

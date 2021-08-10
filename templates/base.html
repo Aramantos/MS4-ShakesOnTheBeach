@@ -80,7 +80,7 @@
           </li>
           <li class="list-inline-item">
             <a id="basket-a"
-              class="{% if grand_total %}text-info font-weight-bold{% else %}text-black{% endif %} nav-link" href="">
+              class="{% if grand_total %}text-info font-weight-bold{% else %}text-black{% endif %} nav-link" href="{% url 'view_basket' %}">
               <div class="text-center">
                 <div><i id="basket" class="fas fa-shopping-bag fa-lg cinnabar"></i></div>
                 <p id="basket-text" class="my-0 cinnabar">
