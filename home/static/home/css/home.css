@@ -7,6 +7,11 @@
     padding: 0;
 }
 
+#open4business{
+    width: 80%;
+    float: right;
+}
+
 @media (max-width: 600px) {
     #home-text {
         padding-right: 25px;
