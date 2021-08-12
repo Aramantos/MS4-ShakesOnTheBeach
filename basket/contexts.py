@@ -24,7 +24,9 @@ def basket_contents(request):
             product = get_object_or_404(Product, pk=item_id)
 
     if total < settings.FREE_DELIVERY_THRESHOLD:
-        delivery = total + settings.STANDARD_DELIVERY
+        delivery = 0
+        if len(basket.items()) > 0:
+            delivery = settings.STANDARD_DELIVERY
         free_delivery_delta = settings.FREE_DELIVERY_THRESHOLD - total
     else:
         delivery = 0
