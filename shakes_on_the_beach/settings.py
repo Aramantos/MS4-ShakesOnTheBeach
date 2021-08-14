@@ -1,21 +1,18 @@
 import os
+import dj_database_url
+
+# load Environmental Variables if debug=true
+DEBUG = 'DEVELOPMENT' in os.environ
+
 if os.path.exists("env.py"):
     import env
 
-import dj_database_url
-
-# Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-
-# Quick-start development settings - unsuitable for production
-# See https://docs.djangoproject.com/en/3.2/howto/deployment/checklist/
 
 # SECRET KEY
 SECRET_KEY = os.getenv("SECRET_KEY")
 
-# SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
-
+# ALLOWED HOSTS
 ALLOWED_HOSTS = ['shakes-on-the-beach.herokuapp.com', 'localhost']
 
 # Application definition
@@ -108,10 +105,18 @@ WSGI_APPLICATION = 'shakes_on_the_beach.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/3.2/ref/settings/#databases
 
-
-DATABASES = {
-    'default': dj_database_url.parse('postgres://dgrqtvdaiyqqop:9c0986ffa34ab8c075ff85ca17f0dcc078cec79f6f1582cc5c1cb7739fd03b03@ec2-54-74-60-70.eu-west-1.compute.amazonaws.com:5432/dacavibpd43lgi')
-}
+# DATABASE
+if 'DATABASE_URL' in os.environ:
+    DATABASES = {
+        'default': dj_database_url.parse(os.environ.get('DATABASE_URL'))
+    }
+else:
+    DATABASES = {
+        'default': {
+            'ENGINE': 'django.db.backends.sqlite3',
+            'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+        }
+    }
 
 # Password validation
 # https://docs.djangoproject.com/en/3.2/ref/settings/#auth-password-validators
