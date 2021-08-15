@@ -41,7 +41,7 @@ body {
 }
 
 #item-image{
-    height: 350px;
+    height: 50vh!important;
 }
 
 .card-body{
