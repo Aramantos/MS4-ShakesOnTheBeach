@@ -1,3 +1,11 @@
+body {
+    background: url('/media/beach1-stock.jpg') no-repeat center center fixed;
+    background-size: cover;
+    height: calc(100vh - 164px);
+    color: #555;
+    font-family: 'Anton';
+}
+    
 #menu{
     color: darkred!important;
     text-transform: uppercase;
@@ -35,3 +43,69 @@
 #item-image{
     height: 350px;
 }
+
+.card-body{
+    background-color: #E0BC9C;
+}
+
+.item-card-body{
+    font-size: x-large;
+    letter-spacing: 1px;
+    color: white;
+    text-shadow: 2px 2px #000;
+}
+
+#item-details-container{
+    /* margin-top: 10%; */
+    background-color: #faebd7a1;
+}
+
+.product-details-container{
+    text-align: -webkit-center;
+    background-color: pink;
+    box-shadow: 6px 6px darkred;
+    padding: 14px;
+}
+
+#product-name,
+#price,
+#category{
+    color: white!important;
+    font-size: 1.5rem;
+    text-shadow: 2px 2px darkred;
+}
+
+#product-desc,
+#quantity{
+    font-size: 1.2rem;
+    color: darkred;
+}
+
+#up-btn,
+#down-btn{
+    color: white;
+    background-color: darkred;
+}
+
+#back-arrow-menu{
+    font-size: 1.7rem;
+    color: darkred;
+}
+
+#back-menu{
+    font-size: 1.5rem;
+    color: darkred;
+}
+
+#add-basket{
+    font-size: 1.2rem;
+    color: white;
+    background-color: darkred;
+}
+
+#add-basket:hover{
+    color: darkred;
+    background-color: white;
+}
+
+
