@@ -81,8 +81,8 @@ body {
     color: darkred;
 }
 
-#up-btn,
-#down-btn{
+.up-btn,
+.down-btn{
     color: white;
     background-color: darkred;
 }
