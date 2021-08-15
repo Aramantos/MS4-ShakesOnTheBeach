@@ -220,6 +220,13 @@ body {
 
 /* ------------------------ Toasts */
 
+/* --------------- Toasts - General */
+
+.toast{
+    font-size: 1.2rem;
+    letter-spacing: 1px;
+}
+
 .message-container {
     position: fixed;
     top: 72px;
@@ -233,6 +240,118 @@ body {
 
 .toast-capper {
     height: 2px;
+}
+
+#basket-contents{
+    height: 180px;
+    overflow: auto;
+}
+
+#checkout-success{
+    background-color: darkred;
+    color: #F8C7CC;
+}
+
+#checkout-success:hover{
+    background-color: #F8C7CC;
+    color: darkred;
+}
+
+.bag-notification-wrapper {
+    height: 100px;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+/* --------------- Success */
+
+#toast-success{
+    border: 4px #28a745 solid;
+    animation-name: success-border-change;
+    animation-duration: 4s;
+    animation-delay: 4s;
+    animation-fill-mode: forwards;
+}
+
+#success{
+    color: #28a745;
+    font-size: 1.5rem;
+    animation-name: success-text-change;
+    animation-duration: 4s;
+    animation-delay: 4s;
+    animation-fill-mode: forwards;
+}
+
+#close-success{
+    font-size: 3rem;
+    color: darkred!important;
+    animation-name: success-close-change;
+    animation-duration: 4s;
+    animation-delay: 4s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes success-border-change {
+    from {border: 4px #28a745 solid;}
+    to {border: 4px darkred solid;}
+  }
+
+  @keyframes success-text-change {
+    from {color: #28a745;}
+    to {color: darkred;}
+  }
+
+  @keyframes success-close-change {
+    from {color: #28a745!important;}
+    to {color: darkred!important;}
+  }
+
+/* --------------- Warning */
+
+#toast-warning{
+    border: 4px #ffc107 solid;
+}
+
+#warning{
+    color: #ffc107;
+    font-size: 1.5rem;
+}
+
+#close-warning{
+    font-size: 3rem;
+    color: #ffc107!important;
+}
+
+/* --------------- Error */
+
+#toast-error{
+    border: 4px #dc3545 solid;
+}
+
+#error{
+    color: #dc3545;
+    font-size: 1.5rem;
+}
+
+#close-error{
+    font-size: 3rem;
+    color: #dc3545!important;
+}
+
+/* --------------- Info */
+
+#toast-info{
+    border: 4px #007bff solid;
+}
+
+#info{
+    color: #007bff;
+    font-size: 1.5rem;
+}
+
+#close-info{
+    font-size: 3rem;
+    color: #007bff!important;
 }
 
 /* from CSS-tricks.com: https://css-tricks.com/snippets/css/css-triangle/ */
@@ -280,11 +399,7 @@ body {
     border-bottom-color: #343a40 !important;
 }
 
-.bag-notification-wrapper {
-    height: 100px;
-    overflow-x: hidden;
-    overflow-y: auto;
-}
+
 
 /* ------------------------ Media Queries */
 
@@ -342,6 +457,12 @@ body {
 @media (max-width: 450px) {
     .header-container {
         padding-top: 190px;
+    }
+}
+
+@media (max-width: 380px) {
+    .toast {
+        width: 290px;
     }
 }
 
