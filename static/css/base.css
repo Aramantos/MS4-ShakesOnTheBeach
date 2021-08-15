@@ -118,28 +118,6 @@ body {
     text-shadow: 2px 2px #000;
 }
 
-#open4business {
-    font-family: 'Anton';
-}
-
-.order-now-button {
-    background: #E0BC9C;
-    color: white;
-    min-width: 260px;
-    font-size: 1.5rem;
-    letter-spacing: 1px;
-}
-
-.order-now-button:hover {
-    background: white;
-    color: #E0BC9C;
-}
-
-.btn-black {
-    background: black;
-    color: white;
-}
-
 .dropdown-menu {
     background: white;
     color: #E0BC9C;
@@ -152,15 +130,6 @@ body {
 
 .dropdown-item:hover {
     color: #9c846e;
-}
-
-.order-now-button:hover,
-.order-now-button:active,
-.order-now-button:focus,
-.btn-black:hoorder .btn-black:active,
-.btn-black:focus {
-    background: #222;
-    color: white;
 }
 
 .text-black {

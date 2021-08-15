@@ -8,8 +8,22 @@
 }
 
 #open4business{
+    font-family: 'Anton';
     width: 80%;
     float: right;
+}
+
+.order-now-button {
+    background: #E0BC9C;
+    color: white;
+    min-width: 260px;
+    font-size: 1.5rem;
+    letter-spacing: 1px;
+}
+
+.order-now-button:hover {
+    background: white;
+    color: #E0BC9C;
 }
 
 @media (max-width: 600px) {
