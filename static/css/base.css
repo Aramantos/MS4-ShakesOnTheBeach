@@ -144,6 +144,11 @@ body {
     text-shadow: 2px 2px black;
 }
 
+.text-shadow-red {
+    text-shadow: 2px 2px red;
+}
+
+
 .border-black {
     border: 1px solid black !important;
 }
@@ -448,6 +453,9 @@ hr{
 @media (max-width: 380px) {
     .toast {
         width: 290px;
+    }
+    #open4business{
+        width: 100%!important;
     }
 }
 
