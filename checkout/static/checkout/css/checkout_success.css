@@ -1,0 +1,12 @@
+body {
+    background: url('/media/beachfood-stock.jpg') no-repeat center center fixed;
+    background-size: cover;
+    height: calc(100vh - 164px);
+    color: white;
+    font-family: 'Anton';
+    font-size: 1.5rem;
+}
+
+#checkout-success-container{
+    background-color: #ff7f5078;
+}

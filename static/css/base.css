@@ -45,6 +45,10 @@
     background-color: #9CB380;
 }
 
+.yellow-text{
+    color: #fcf32c;
+}
+
 .darkred-text{
     color: darkred!important;
 }
@@ -180,6 +184,10 @@ body {
 .update-link,
 .remove-item {
     cursor: pointer;
+}
+
+.letter-space1{
+    letter-spacing: 1px;
 }
 
 /* ------------------------ Allauth form formatting */

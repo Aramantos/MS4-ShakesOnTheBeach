@@ -71,3 +71,9 @@ tr {
     color: white;
     background: aqua;
 }
+
+#delivery-delta{
+    background-color: steelblue;
+    text-align: center;
+    color: #fcf32c!important;
+}
