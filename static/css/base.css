@@ -190,6 +190,10 @@ body {
     letter-spacing: 1px;
 }
 
+hr{
+    border-top: 4px solid rgba(0,0,0,.1);
+}
+
 /* ------------------------ Allauth form formatting */
 
 .allauth-form-inner-content p {
