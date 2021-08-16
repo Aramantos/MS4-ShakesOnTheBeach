@@ -14,7 +14,6 @@
 {% endblock %}
 
 {% block content %}
-    <div class="overlay"></div>
     <div id="item-details-container" class="container-fluid">
         <div class="row">
             <div class="col-12 col-md-6 col-lg-4 offset-lg-2">
@@ -57,7 +56,7 @@
                                                 </span>
                                             </button>
                                         </div>
-                                        <input class="form-control qty_input darkred" type="number"
+                                        <input class="form-control qty_input darkred-text" type="number"
                                             name="quantity" value="1" min="1" max="99"
                                             data-item_id="{{ product.id }}"
                                             id="id_qty_{{ product.id }}">

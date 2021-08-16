@@ -1,3 +1,73 @@
-.image-basket{
+body {
+    background: url('/media/beach-stock.jpg') no-repeat center center fixed;
+    background-size: cover;
+    height: calc(100vh - 164px);
+    color: darkred;
+    font-family: 'Anton';
+}
+
+.image-basket {
     height: 150px;
+}
+
+#basket-box {
+    color: white;
+    background-color: #00bfff96;
+}
+
+.table-header {
+    color: white;
+    letter-spacing: 1px;
+    font-size: 1.5rem;
+    background-color: steelblue;
+    text-shadow: 2px 2px black;
+}
+
+tr {
+    color: aliceblue;
+    text-shadow: 2px 2px black;
+    font-size: 1.5rem;
+    letter-spacing: 2px;
+}
+
+.update-remove-btn {
+    font-size: 1.5rem;
+    letter-spacing: 3px;
+}
+
+.update-link {
+    color: aqua!important;
+}
+
+.remove-item{
+    color: red!important;
+}
+
+.increment-qty,
+.decrement-qty{
+    background: aqua;
+}
+
+.increment-qty:hover,
+.decrement-qty:hover{
+    color: aqua;
+    background: black;
+}
+
+#arrow{
+    color: aqua;
+}
+
+#back-to-menu{
+    color: aqua;
+}
+
+#checkout{
+    color: aqua;
+    background: white;
+}
+
+#checkout:hover{
+    color: white;
+    background: aqua;
 }

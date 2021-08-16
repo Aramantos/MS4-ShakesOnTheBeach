@@ -45,8 +45,12 @@
     background-color: #9CB380;
 }
 
-.darkred{
-    color: darkred;
+.darkred-text{
+    color: darkred!important;
+}
+
+.white-text{
+    color: white!important;
 }
 
 /*-------------------------Base Template */
@@ -59,7 +63,7 @@ body {
     background: url('/media/shakesonthebeach-stock.jpg') no-repeat center center fixed;
     background-size: cover;
     height: calc(100vh - 164px);
-    color: #555;
+    color: darkred;
     font-family: 'Anton';
 }
 
@@ -132,8 +136,8 @@ body {
     color: #9c846e;
 }
 
-.text-black {
-    color: #000 !important;
+.text-shadow {
+    text-shadow: 2px 2px black;
 }
 
 .border-black {
@@ -146,8 +150,22 @@ body {
     top: 0;
     left: 0;
     position: fixed;
-    background: rgba(255, 255, 255, 0.377);
+    background: rgb(255, 255, 255);
     z-index: -1;
+
+    animation-name: overlay-fade-in;
+    animation-duration: 8s;
+    animation-delay: 0.8s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes overlay-fade-in {
+    from{
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+    }
 }
 
 .btt-button {
