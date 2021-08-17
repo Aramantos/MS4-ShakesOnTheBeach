@@ -81,15 +81,25 @@ body {
 }
 
 #umbrella {
-    padding: 8px 8px 0 0;
+    padding: 4px 8px 0 0;
 }
 
-#logo,
-#logo h2 {
+#umbrella,
+#logo h2,
+#logo-text {
     color: white;
     text-shadow: 2px 2px #000;
 }
 
+#logo-text{
+    margin-bottom: 0!important;
+}
+
+#logo_logotext{
+    display: flex;
+}
+
+#umbrella:hover,
 #logo-text:hover{
     color: #f8c7ec;
 }
@@ -101,6 +111,10 @@ body {
 
 .main-logo-link {
     width: fit-content;
+}
+
+#user-controls{
+    margin-top: 16px!important;
 }
 
 #user,
@@ -434,19 +448,19 @@ hr{
 
 @media (max-width: 767px) {
     .header-container {
-        padding-top: 160px;
+        padding-top: 130px;
     }
 }
 
 @media (max-width: 520px) {
     .header-container {
-        padding-top: 175px;
+        padding-top: 120px;
     }
 }
 
 @media (max-width: 450px) {
     .header-container {
-        padding-top: 190px;
+        padding-top: 115px;
     }
 }
 
@@ -457,10 +471,13 @@ hr{
     #open4business{
         width: 100%!important;
     }
+    .nav-link{
+        padding: .5rem .5rem;
+    }
 }
 
 @media (max-width: 330px) {
     .header-container {
-        padding-top: 230px;
+        padding-top: 110px;
     }
 }

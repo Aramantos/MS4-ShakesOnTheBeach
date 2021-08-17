@@ -50,14 +50,14 @@
 <body>
   <header class="container-fluid fixed-top">
     <div class="row sand-bg">
-      <div id="logo-title" class="col-6 col-md-7 my-auto py-1 py-lg-0 text-left">
-        <a id="logo" href="{% url 'home' %}" class="nav-link">
-          <i id="umbrella" class="fas fa-umbrella-beach display-4 d-none d-lg-block float-lg-left"></i>
-          <h2 id="logo-text" class="logo-font my-4"> Shakes on the Beach</h2>
+      <div id="logo-title" class="col-3 col-md-8 my-auto py-1 py-lg-0 text-left">
+        <a id="logo_logotext" href="{% url 'home' %}" class="nav-link">
+          <i id="umbrella" class="fas fa-umbrella-beach display-4 d-block float-lg-left"></i>
+          <h2 id="logo-text" class="logo-font d-none d-md-block my-4"> Shakes on the Beach</h2>
         </a>
       </div>
-      <div class="col-6 col-md-5 my-auto py-1 py-lg-0">
-        <ul class="list-inline list-unstyled text-center text-lg-right my-0">
+      <div id="user-controls" class="col-9 col-md-4 my-auto py-1 py-lg-0">
+        <ul class="list-inline list-unstyled text-center text-lg-right text-right my-0 float-right">
           <li class="list-inline-item dropdown">
             <a id="user-a" class="text-black nav-link" href="#" id="user-options" data-toggle="dropdown"
               aria-haspopup="true" aria-expanded="false">
@@ -125,7 +125,7 @@
   {% endblock %}
 
   {% block postloadjs %}
-  <script type="text/javascript">
+  <script>
     $('.toast').toast('show');
   </script>
   {% endblock %}
