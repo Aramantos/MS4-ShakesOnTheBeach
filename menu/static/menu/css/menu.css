@@ -11,6 +11,14 @@ body {
     text-transform: uppercase;
 }
 
+#menu-navbar{
+    background-color: #f8c7cce3!important;
+}
+
+.menu-navbar-items{
+    background-color: #d8a8aca6;
+}
+
 #navbarNav{
     justify-content: space-evenly!important;
     letter-spacing: 1px;
