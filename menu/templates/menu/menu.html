@@ -16,31 +16,32 @@
                         <h2><a id="menu" href="{% url 'menu' %}">Menu</a></h2>
                         <hr class="w-50 mb-1">
                     </div>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                  <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse menu-navbar-items" id="navbarNav">
-                  <ul class="navbar-nav">
-                    <li class="nav-item">
-                      <a class="nav-link" href="{% url 'menu' %}?category=burger">Burgers</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="{% url 'menu' %}?category=pizza">Pizzas</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="{% url 'menu' %}?category=sandwich">Sandwich</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="{% url 'menu' %}?category=salad">Salad</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="{% url 'menu' %}?category=shake">Shakes</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="{% url 'menu' %}?category=mineral">Drinks</a>
-                    </li>
-                  </ul>
-                </div>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse menu-navbar-items" id="navbarNav">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                            <a class="nav-link" href="{% url 'menu' %}?category=burger">Burgers</a>
+                            </li>
+                            <li class="nav-item">
+                            <a class="nav-link" href="{% url 'menu' %}?category=pizza">Pizzas</a>
+                            </li>
+                            <li class="nav-item">
+                            <a class="nav-link" href="{% url 'menu' %}?category=sandwich">Sandwich</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="{% url 'menu' %}?category=salad">Salad</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="{% url 'menu' %}?category=shake">Shakes</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="{% url 'menu' %}?category=mineral">Drinks</a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
             </div>
         </div>
     </div>
@@ -58,7 +59,7 @@
                             <div class="card h-100 border-0">
                                 {% if product.image %}
                                 <a href="{% url 'menu_product_detail' product.id %}">
-                                    <img id="item-image" class="card-img-top img-fluid" src="{{ product.image.url }}" alt="{{ product.name }}">
+                                    <img class="card-img-top img-fluid item-image" src="{{ product.image.url }}" alt="{{ product.name }}">
                                 </a>
                                 {% else %}
                                 <a href="{% url 'menu_product_detail' product.id %}">
@@ -104,7 +105,7 @@
 
 {% block postloadjs %}
     {{ block.super }}
-    <script type="text/javascript">
+    <script>
 		$('.btt-link').click(function(e) {
 			window.scrollTo(0,0)
 		})
