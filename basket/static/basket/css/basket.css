@@ -57,6 +57,7 @@ tr {
 
 #arrow{
     color: aqua;
+    text-shadow: 2px 2px 6px black;
 }
 
 #back-to-menu{
@@ -66,6 +67,7 @@ tr {
 #checkout{
     color: aqua;
     background: white;
+    text-shadow: 0px 0px 4px black;
 }
 
 #checkout:hover{
@@ -77,4 +79,8 @@ tr {
     background-color: steelblue;
     text-align: center;
     color: #fcf32c!important;
+}
+
+#arrow-btn{
+    background-color: steelblue;
 }
