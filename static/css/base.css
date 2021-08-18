@@ -125,8 +125,8 @@ body {
     text-shadow: 2px 2px #000;
 }
 
-#user-a div i:hover,
-#user-a div p:hover,
+#user:hover,
+#user-text:hover,
 #basket-a div i:hover,
 #basket-a div p:hover {
     color: #f8c7ec;
