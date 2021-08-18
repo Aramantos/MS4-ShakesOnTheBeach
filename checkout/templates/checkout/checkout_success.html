@@ -59,16 +59,34 @@
 
                         {% for item in order.lineitems.all %}
 
-                        <div class="row">
-                            <div class="col-12 col-md-4">
-                                <p class="small mb-0 font-weight-bold text-md-left yellow-text text-shadow">
-                                    {{ item.product.name }}
-                                </p>
-                            </div>
-                            <div class="col-12 col-md-8 text-md-right yellow-text text-shadow">
-                                <p class="small mb-0">{{ item.quantity }} @ ${{ item.product.price }} each </p>
-                            </div>
-                        </div>
+                            {% if not forloop.counter|divisibleby:2 %}
+                                <div class="row">
+                                    <div class="col-12 col-md-4">
+                                        <p class="small mb-0 font-weight-bold text-md-left yellow-text text-shadow">
+                                            {{ item.product.name }}
+                                        </p>
+                                    </div>
+                                    <div class="col-12 col-md-8 text-md-right yellow-text text-shadow">
+                                        <p class="small mb-0">{{ item.quantity }} @ ${{ item.product.price }} each </p>
+                                    </div>
+                                </div>
+
+                            {% endif %}
+
+                            {% if forloop.counter|divisibleby:2 %}
+
+                                <div class="row">
+                                    <div class="col-12 col-md-4">
+                                        <p class="small mb-0 font-weight-bold text-md-left darkred-text">
+                                            {{ item.product.name }}
+                                        </p>
+                                    </div>
+                                    <div class="col-12 col-md-8 text-md-right darkred-text">
+                                        <p class="small mb-0">{{ item.quantity }} @ ${{ item.product.price }} each </p>
+                                    </div>
+                                </div>
+
+                            {% endif %}
 
                         {% endfor %}
 
