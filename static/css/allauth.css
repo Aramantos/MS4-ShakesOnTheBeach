@@ -1,0 +1,108 @@
+body {
+    background: url('/media/shakesonthebeach4-stock.jpg') no-repeat center center fixed;
+    background-size: cover;
+    height: calc(100vh - 164px);
+    color: #900e76;
+    font-family: 'Anton';
+    font-size: 1.5rem;
+}
+
+#form{
+    background-color: #f2edf180;
+    box-shadow: 6px 6px #900e76;
+}
+
+#sign-in,
+#sign-up,
+#password-reset{
+    text-align: center!important;
+    color: #900f76;
+    text-shadow: 0px 0px 6px #9fcbee;
+}
+
+#no-account,
+#account-already{
+    text-align: center!important;
+    color: steelblue!important;
+}
+
+#no-account a,
+#account-already a{
+    color: #900f76;
+    text-shadow: 0px 0px 6px #9fcbee;
+}
+
+#id_remember{
+    margin-top: 11px;
+}
+
+#menu,
+#login{
+    font-size: 1.8rem;
+    color: #900f76;
+}
+
+#menu:hover,
+#login:hover{
+    text-decoration: underline;
+}
+
+#menu-icon,
+#login-icon{
+    font-size: 2.06rem;
+}
+
+#sign-in-button,
+#submit,
+#change-password,
+#confirm{
+    text-align: center;
+    color: #900f76;
+    text-shadow: 0px 0px 6px #9fcbee;
+    background-color: aliceblue;
+    font-size: 1.5rem;
+    letter-spacing: 3px;
+    padding: 8px 20px;
+}
+
+#sign-in-button:hover,
+#submit:hover,
+#change-password:hover,
+#confirm:hover{
+    color: aliceblue;
+    background-color: #900f76;
+}
+
+.password_change{
+    padding-bottom: 10px;
+}
+
+.allauth-form-inner-content a {
+    color: steelblue;
+}
+
+.allauth-form-inner-content input {
+    letter-spacing: 2px;
+}
+
+.allauth-form-inner-content p {
+    margin-top: 1.5rem;
+    color: steelblue;
+}
+
+/* --------------------------------- Media Queries */
+
+@media (max-width: 1200px) {
+    #form{
+        margin-left: 70%;
+    }
+}
+
+@media (max-width: 991px) {
+    #allauth-container{
+        padding-top: 200px;
+    }
+    #form{
+        margin-left: 0;
+    }
+}
