@@ -94,3 +94,7 @@ select option[value=""] {
     background-color: #fcf32c;
     color: white;
 }
+
+.checkout-image{
+    height: 60px;
+}
