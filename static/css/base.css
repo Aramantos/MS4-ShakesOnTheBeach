@@ -140,6 +140,11 @@ body {
     text-shadow: 2px 2px #000;
 }
 
+.nav-border{
+    border-bottom: 4px solid aliceblue;
+    box-shadow: 0px 1px 11px steelblue;
+}
+
 .dropdown-menu {
     background: white;
     color: #E0BC9C;
