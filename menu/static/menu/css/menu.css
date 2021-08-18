@@ -9,6 +9,7 @@ body {
 #menu{
     color: darkred!important;
     text-transform: uppercase;
+    text-shadow: 2px 2px white;
 }
 
 #menu-navbar{
@@ -70,8 +71,8 @@ body {
 
 .product-details-container{
     text-align: -webkit-center;
-    background-color: pink;
-    box-shadow: 6px 6px darkred;
+    background-color: #f1ba86;
+    box-shadow: 6px 6px #69523b;
     padding: 14px;
 }
 
