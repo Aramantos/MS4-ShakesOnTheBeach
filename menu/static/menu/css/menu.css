@@ -49,7 +49,8 @@ body {
     color: darkred!important;
 }
 
-.item-image{
+.item-image,
+#item-image-info{
     height: 50vh!important;
 }
 
