@@ -18,3 +18,13 @@ body {
 .white-text{
     font-size: 1.8rem;
 }
+
+#order-number{
+    overflow: auto;
+}
+
+@media (max-width: 390px) {
+    #email{
+        font-size: 1.3rem;
+    }
+}
