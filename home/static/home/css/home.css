@@ -19,11 +19,14 @@
     min-width: 260px;
     font-size: 1.5rem;
     letter-spacing: 1px;
+    border: 7px solid white;
+    box-shadow: 0px 0px 5px black;
 }
 
 .order-now-button:hover {
     background: white;
     color: #E0BC9C;
+    border: 7px solid #E0BC9C;
 }
 
 @media (max-width: 600px) {
