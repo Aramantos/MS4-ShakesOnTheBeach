@@ -110,12 +110,12 @@
                         </table>
                     </div>
                 {% else %}
-                    <p class="lead mb-5">Your basket is empty.</p>
-                    <a href="{% url 'menu' %}" class="btn btn-outline-black rounded-0 btn-lg">
+                    <p id="empty-basket" class="lead text-shadow">Your basket is empty. Please return the the <a id="menu" href="{% url 'menu' %}">Menu</a> to add items to your basket.</p>
+                    <a id="back-to-menu" href="{% url 'menu' %}" class="btn btn-outline-black rounded-0 btn-lg float-right">
                         <span class="icon">
-                            <i class="fas fa-chevron-left"></i>
+                            <i id="arrow" class="fas fa-chevron-left"></i>
                         </span>
-                        <span id="back-to-menu" class="text-uppercase">Keep Shopping</span>
+                        <span class="text-uppercase text-shadow">Keep Shopping</span>
                     </a>
                 {% endif %}
             </div>
