@@ -98,3 +98,7 @@ select option[value=""] {
 .checkout-image{
     height: 60px;
 }
+
+.lock{
+    font-size: 1.8rem;
+}

@@ -45,6 +45,7 @@ body {
     background-color: #F8C7CC;
     border: darkred!important;
 }
+
 #arrow{
     color: darkred!important;
 }
@@ -118,4 +119,8 @@ body {
     background-color: white;
 }
 
-
+#delivery-delta{
+    background-color: #b04b34;
+    text-align: center;
+    color: #fcf32c!important;
+}

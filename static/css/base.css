@@ -283,6 +283,10 @@ hr{
     overflow: auto!important;
 }
 
+.toast-body{
+    color: #28a745;
+}
+
 .message-container {
     position: fixed;
     top: 72px;
@@ -304,13 +308,14 @@ hr{
 }
 
 #checkout-success{
-    background-color: darkred;
-    color: #F8C7CC;
+    background-color: #28a745;
+    color: #ffffff;
+    border: 2px solid #28a745;
 }
 
 #checkout-success:hover{
-    background-color: #F8C7CC;
-    color: darkred;
+    background-color: #ffffff;
+    color: #28a745;
 }
 
 .bag-notification-wrapper {
@@ -319,35 +324,39 @@ hr{
     overflow-y: auto;
 }
 
+.lock{
+    font-size: 1.5rem;
+}
+
 /* --------------- Success */
 
 #toast-success{
-    border: 4px #28a745 solid;
-    animation-name: success-border-change;
+    border: 4px #28a745 solid!important;
+    /* animation-name: success-border-change;
     animation-duration: 4s;
     animation-delay: 4s;
-    animation-fill-mode: forwards;
+    animation-fill-mode: forwards; */
 }
 
 #success{
-    color: #28a745;
+    color: #28a745!important;
     font-size: 1.5rem;
-    animation-name: success-text-change;
+    /* animation-name: success-text-change;
     animation-duration: 4s;
     animation-delay: 4s;
-    animation-fill-mode: forwards;
+    animation-fill-mode: forwards; */
 }
 
 #close-success{
     font-size: 3rem;
-    color: darkred!important;
-    animation-name: success-close-change;
+    color: #28a745!important;
+    /* animation-name: success-close-change;
     animation-duration: 4s;
     animation-delay: 4s;
-    animation-fill-mode: forwards;
+    animation-fill-mode: forwards; */
 }
 
-@keyframes success-border-change {
+/* @keyframes success-border-change {
     from {border: 4px #28a745 solid;}
     to {border: 4px darkred solid;}
   }
@@ -360,16 +369,16 @@ hr{
   @keyframes success-close-change {
     from {color: #28a745!important;}
     to {color: darkred!important;}
-  }
+  } */
 
 /* --------------- Warning */
 
 #toast-warning{
-    border: 4px #ffc107 solid;
+    border: 4px solid #ffc107!important;
 }
 
 #warning{
-    color: #ffc107;
+    color: #ffc107!important;
     font-size: 1.5rem;
 }
 
@@ -381,7 +390,7 @@ hr{
 /* --------------- Error */
 
 #toast-error{
-    border: 4px #dc3545 solid;
+    border: 4px solid #dc3545!important;
 }
 
 #error{
@@ -397,7 +406,7 @@ hr{
 /* --------------- Info */
 
 #toast-info{
-    border: 4px #007bff solid;
+    border: 4px solid #007bff!important;
 }
 
 #info{
