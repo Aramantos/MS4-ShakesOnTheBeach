@@ -4,6 +4,7 @@ body {
     height: calc(100vh - 164px);
     color: darkred;
     font-family: 'Anton';
+    letter-spacing: 1.5px;
 }
 
 .image-basket {
