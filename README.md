@@ -2,7 +2,7 @@
 
 Live Link - [https://shakes-on-the-beach.herokuapp.com/](https://shakes-on-the-beach.herokuapp.com/)
 
-![responsiveness](static/images/responsiveness.png "image_tooltip")
+![responsiveness](static/responsiveness.png "image_tooltip")
 
 ---
 
@@ -38,11 +38,9 @@ Live Link - [https://shakes-on-the-beach.herokuapp.com/](https://shakes-on-the-b
 
 ---
 
-Shakes on the beach is a sea side cafe offering an assortment of food and drinks. Orders can be placed for either eat in or take out, depending on the customers preference.
+Shakes on the beach is a sea side cafe offering an assortment of food and drinks.
 
-This web application is designed to allow the user to browse the available options and build a basket. The user can then either make a card payment or pay in cash on collection.
-
-The UX is focused on being both usable by customers and empolyees to proccess orders. 
+This web application is designed to allow the user to browse the available options and build a basket. The user can then then make a card payment and the order will be proccessed.
 
 ---
 
@@ -56,12 +54,12 @@ The UX is focused on being both usable by customers and empolyees to proccess or
 
 As a user, I would like to...
 
-- 
-- 
-- 
-- 
-- 
-- 
+- Browse a menu of the available products the cafe offers.
+- Select the items I wish to order and add them to a basket.
+- Adjust the basket by increaseing or decreasing the amount of an item, or remove the item entirely.
+- Enter my delivery and credit card information so I can submit my order to be delievered to my chosen address.
+- Recieve a confirmation of my order with the order,billing and delivery details.
+- The option of creating a user profile to store my information to process my future orders more easily.
 - 
 
 #### **Developer Stories**
@@ -374,9 +372,9 @@ Error Pages:
 
 ### **Features Left to Implement when skills develop**
 
-- 
-- 
-- 
+- Timer
+- Collection
+- Loyalty Tokens - Users who post their meals on social media
 - 
 
 ---
