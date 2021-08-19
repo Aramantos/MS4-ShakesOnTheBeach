@@ -21,6 +21,8 @@ Live Link - [https://shakes-on-the-beach.herokuapp.com/](https://shakes-on-the-b
 - [Wireframes](#wireframes)
 - [Features](#features)
 - [Testing](#testing)
+  - [Manual](#manual)
+  - [Automated](#automated)
   - [Bugs](#bugs)
 - [Technologies Used](#technologies-used)
 - [Resources](#resources)
@@ -98,14 +100,42 @@ As a user, I would like to...
 
 #### **Planned Functionality:**
 
-Navbar/Sidenav:
+Navbar:
 
 - 
 - 
 - 
 - 
 
-Login-Register Page:
+Menu Page:
+
+- 
+- 
+- 
+- 
+
+Menu Product Details Page:
+
+- 
+- 
+- 
+- 
+
+Basket Page:
+
+- 
+- 
+- 
+- 
+
+Checkout Page:
+
+- 
+- 
+- 
+- 
+
+Checkout Success Page:
 
 - 
 - 
@@ -119,28 +149,28 @@ Profile Page:
 - 
 - 
 
-Game Page:
+Login Page:
 
 - 
 - 
 - 
 - 
 
-Character Page:
+Sign Up Page:
 
 - 
 - 
 - 
 - 
 
-Search Items/Sessions Page:
+Password Reset Page:
 
 - 
 - 
 - 
 - 
 
-Edit Item/Session Page:
+Verification Pages:
 
 - 
 - 
@@ -164,79 +194,42 @@ Error Pages:
 
 #### **Interaction Design:**
 
-Navbar/Sidenav:
+Navbar:
 
 - 
 - 
 - 
 - 
 
-Login-Register Page:
+Menu Page:
 
 - 
 - 
 - 
 - 
 
-Profile Page:
+Menu Product Details Page:
 
 - 
 - 
 - 
 - 
 
-Game Page:
+Basket Page:
 
 - 
 - 
 - 
 - 
 
-Character Page:
+Checkout Page:
 
 - 
 - 
 - 
 - 
 
-Search Items/Sessions Page:
-
-- 
-- 
-- 
-- 
-
-Edit Item/Session Page:
-
-- 
-- 
-- 
-- 
-
-Error Pages:
-
-- 
-- 
-- 
-- 
-
-#### **Information Design:**
-
-Navbar/Sidenav:
-
-- 
-- 
-- 
-- 
-
-Flash Messages:
-
-- 
-- 
-- 
-- 
-
-Login-Register Page:
+Checkout Success Page:
 
 - 
 - 
@@ -250,35 +243,28 @@ Profile Page:
 - 
 - 
 
-Game Page:
+Login Page:
 
 - 
 - 
 - 
 - 
 
-Character Page:
+Sign Up Page:
 
 - 
 - 
 - 
 - 
 
-Search Items/Sessions Page:
+Password Reset Page:
 
 - 
 - 
 - 
 - 
 
-Edit Item Page:
-
-- 
-- 
-- 
-- 
-
-Edit Session Page:
+Verification Pages:
 
 - 
 - 
@@ -299,14 +285,6 @@ Error Pages:
 ---
 
 ### **Skeleton**
-
-- [Wireframes](#wireframes)
-- 
-- 
-- 
-- 
-
-[Return to Table of Contents](#table-of-contents)
 
 ---
 
@@ -330,7 +308,46 @@ Error Pages:
 
 ---
 
-## **Wireframes**
+## [Wireframes](#wireframes)
+
+---
+
+### Hompage
+![alt_text](static/wireframes/1.home-page.png "image_tooltip")
+### Menu on Large Screens
+![alt_text](static/wireframes/2.menu-large.png "image_tooltip")
+### Menu on Medium Screens
+![alt_text](static/wireframes/3.menu-mid.png "image_tooltip")
+### Menu on Small Screens
+![alt_text](static/wireframes/4.menu-small.png "image_tooltip")
+### Menu Product Details on Large Screens
+![alt_text](static/wireframes/5.menu-product-details-large.png "image_tooltip")
+### Menu Product Details on Large Screens with Toasts
+![alt_text](static/wireframes/6.menu-product-details-with-toast-large.png "image_tooltip")
+### Menu Product Details on Medium and Small Screens
+![alt_text](static/wireframes/7.menu-product-details-mid&small.png "image_tooltip")
+### Menu Product Details on Medium and Small Screens with Toasts
+![alt_text](static/wireframes/8.menu-product-details-with-toast-mid&small.png "image_tooltip")
+### Basket
+![alt_text](static/wireframes/9.basket.png "image_tooltip")
+### Basket on Medium and Small Screens
+![alt_text](static/wireframes/10.basket-mid&small.png "image_tooltip")
+### Checkout
+![alt_text](static/wireframes/11.checkout.png "image_tooltip")
+### Checkout on Medium and Small Screens
+![alt_text](static/wireframes/12.checkout-mid&small.png "image_tooltip")
+### Checkout Success
+![alt_text](static/wireframes/13.checkout-success.png "image_tooltip")
+### Checkout Success with Toasts
+![alt_text](static/wireframes/14.checkout-success-with-toast.png "image_tooltip")
+### Checkout Success on Medium and Small Screens
+![alt_text](static/wireframes/15.checkout-success-small&mid.png "image_tooltip")
+
+---
+
+[Return to Table of Contents](#table-of-contents)
+
+---
 
 ---
 
@@ -449,24 +466,49 @@ I have tested the website on various physical devices (iPad, iPad Air, Macbook P
 - 
 
 ---
-### Manual Testing 
+
+[Return to Table of Contents](#table-of-contents)
+
+---
+### **Manual**
 ---
 
-Navbar/Sidenav:
+Navbar:
 
 - 
 - 
 - 
 - 
 
-Sidenav:
+Menu Page:
 
 - 
 - 
 - 
 - 
 
-Login-Register Page:
+Menu Product Details Page:
+
+- 
+- 
+- 
+- 
+
+Basket Page:
+
+- 
+- 
+- 
+- 
+
+Checkout Page:
+
+- 
+- 
+- 
+- 
+
+Checkout Success Page:
 
 - 
 - 
@@ -480,14 +522,28 @@ Profile Page:
 - 
 - 
 
-Game Page:
+Login Page:
 
 - 
 - 
 - 
 - 
 
-Edit Item/Session Page:
+Sign Up Page:
+
+- 
+- 
+- 
+- 
+
+Password Reset Page:
+
+- 
+- 
+- 
+- 
+
+Verification Pages:
 
 - 
 - 
@@ -500,6 +556,102 @@ Error Pages:
 - 
 - 
 - 
+
+---
+
+[Return to Table of Contents](#table-of-contents)
+
+---
+### **Automated**
+---
+
+Navbar:
+
+- 
+- 
+- 
+- 
+
+Menu Page:
+
+- 
+- 
+- 
+- 
+
+Menu Product Details Page:
+
+- 
+- 
+- 
+- 
+
+Basket Page:
+
+- 
+- 
+- 
+- 
+
+Checkout Page:
+
+- 
+- 
+- 
+- 
+
+Checkout Success Page:
+
+- 
+- 
+- 
+- 
+
+Profile Page:
+
+- 
+- 
+- 
+- 
+
+Login Page:
+
+- 
+- 
+- 
+- 
+
+Sign Up Page:
+
+- 
+- 
+- 
+- 
+
+Password Reset Page:
+
+- 
+- 
+- 
+- 
+
+Verification Pages:
+
+- 
+- 
+- 
+- 
+
+Error Pages:
+
+- 
+- 
+- 
+- 
+
+---
+
+[Return to Table of Contents](#table-of-contents)
 
 ---
 
