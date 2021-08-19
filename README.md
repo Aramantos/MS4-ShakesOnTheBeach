@@ -707,6 +707,10 @@ Create a file named **Procfile** to declare what commands are run by the applica
 
 ### **Media**
 
+Favicon
+
+- [Image](https://www.google.com/url?sa=i&url=https%3A%2F%2Ffreepngimg.com%2Fpng%2F10976-beach-png-images%2Ficon&psig=AOvVaw0BDiH7b_mnvotE5Q96c7p8&ust=1629389804662000&source=images&cd=vfe&ved=0CAsQjRxqFwoTCJCugZb8uvICFQAAAAAdAAAAABAD)
+
 Pictures
 
 - All photos with names ending in "-stock" in the media folder were taken from [shutterstock](https://www.shutterstock.com/)
