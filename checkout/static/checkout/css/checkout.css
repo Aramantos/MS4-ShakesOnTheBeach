@@ -103,3 +103,6 @@ select option[value=""] {
 .lock{
     font-size: 1.8rem;
 }
+a:hover{
+    color: #fcf32c;
+}
