@@ -1,6 +1,73 @@
+body {
+    background: url('/media/shakesonthebeach1-stock.jpg') no-repeat center center fixed;
+    background-size: cover;
+    height: calc(100vh - 164px);
+    color: darkred;
+    font-family: 'Anton';
+    letter-spacing: 1px;
+}
+
+#profile-container{
+    background-color: #fb305957;
+    padding: 20px;
+}
+
+#profile-name,
+#order-number,
+td{
+    color: #8131bd;
+    text-shadow: 0px 0px 5px white;
+}
+
+.profile-headers{
+    color: white;
+    font-size: 1.5rem;
+    text-shadow: 2px 2px black;
+}
+
+#profile-update-form .form-control{
+    color: #8131bd!important;
+    letter-spacing: 1px;
+}
+
+#update-btn{
+    color: white;
+    text-shadow: 0px 0px 5px black;
+    background-color: thistle;
+    font-size: 1.5rem;
+}
+
+#update-btn:hover{
+    color: thistle;
+    background-color: white;
+}
+
+.order-headers{
+    color: white;
+    font-size: 1.2rem;
+    text-shadow: 2px 2px black;
+}
+
+.order-history,
+.table-responsive{
+    overflow-y: visible!important;
+    overflow-x: visible;
+}
+
+.table{
+    width: 97%;
+    margin: auto;
+    overflow: none!important;
+    background-color: pink;
+    box-shadow: 4px 4px #6f5055;
+}
+
+#order-number{
+    color: #235a96;;
+}
+
 .order-history {
     max-height: 416px; /* height of profile form + submit button */
-    overflow-y: auto;
 }
 
 #profile-update-form .form-control {
