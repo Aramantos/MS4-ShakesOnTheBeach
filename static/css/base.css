@@ -377,6 +377,10 @@ hr{
 
 /* --------------- Warning */
 
+.toast-yellow{
+    color: #ffc107!important;
+}
+
 #toast-warning{
     border: 4px solid #ffc107!important;
 }
@@ -392,6 +396,10 @@ hr{
 }
 
 /* --------------- Error */
+
+.toast-red{
+    color: #dc3545!important;
+}
 
 #toast-error{
     border: 4px solid #dc3545!important;
@@ -409,12 +417,16 @@ hr{
 
 /* --------------- Info */
 
+.toast-blue{
+    color: #007bff!important;
+}
+
 #toast-info{
     border: 4px solid #007bff!important;
 }
 
 #info{
-    color: #007bff;
+    color: #007bff!important;
     font-size: 1.5rem;
 }
 
