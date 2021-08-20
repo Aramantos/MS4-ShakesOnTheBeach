@@ -37,7 +37,8 @@ body {
 }
 
 #menu,
-#login{
+#login,
+#cancel-text{
     font-size: 1.8rem;
     color: #900f76;
 }
@@ -48,14 +49,16 @@ body {
 }
 
 #menu-icon,
-#login-icon{
+#login-icon,
+#cancel{
     font-size: 2.06rem;
 }
 
 #sign-in-button,
 #submit,
 #change-password,
-#confirm{
+#confirm,
+#sign-out{
     text-align: center;
     color: #900f76;
     text-shadow: 0px 0px 6px #9fcbee;
@@ -68,7 +71,8 @@ body {
 #sign-in-button:hover,
 #submit:hover,
 #change-password:hover,
-#confirm:hover{
+#confirm:hover,
+#sign-out:hover{
     color: aliceblue;
     background-color: #900f76;
 }
