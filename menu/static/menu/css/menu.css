@@ -43,7 +43,7 @@ body {
 
 .btt-button{
     background-color: #F8C7CC;
-    border: darkred!important;
+    border: 1px solid darkred!important;
 }
 
 #arrow{
@@ -123,4 +123,12 @@ body {
     background-color: #b04b34;
     text-align: center;
     color: #fcf32c!important;
+}
+
+.navbar-light .navbar-toggler {
+    border: 2px solid #766368;
+}
+
+#menu-nav-hr{
+    border-top: 4px solid rgb(118 99 104 / 62%);
 }
