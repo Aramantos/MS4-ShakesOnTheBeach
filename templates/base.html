@@ -53,11 +53,19 @@
 <body>
   <header class="container-fluid fixed-top nav-border">
     <div class="row sand-bg">
-      <div id="logo-title" class="col-3 col-md-8 my-auto py-1 py-lg-0 text-left">
-        <a id="logo_logotext" href="{% url 'home' %}" class="nav-link">
+      <div id="logo-title" class="col-3 col-md-8 my-auto py-1 py-lg-0 text-left dropdown">
+        <a id="logo-logotext" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="nav-link">
           <i id="umbrella" class="fas fa-umbrella-beach display-4 d-block float-lg-left"></i>
           <h2 id="logo-text" class="logo-font d-none d-md-block my-4"> Shakes on the Beach</h2>
         </a>
+        <div class="dropdown">
+          <div id="home-dropdown" class="dropdown-menu" aria-labelledby="logo-logotext">
+            <a class="dropdown-item" href="{% url 'home' %}">Home</a>
+            <a class="dropdown-item" href="{% url 'menu' %}">Menu</a>
+            <a class="dropdown-item" href="#">Customer Gallery</a>
+            <a class="dropdown-item" href="#">About Us</a>
+          </div>
+        </div>
       </div>
       <div id="user-controls" class="col-9 col-md-4 my-auto py-1 py-lg-0">
         <ul class="list-inline list-unstyled text-center text-lg-right text-right my-0 float-right">
@@ -71,11 +79,7 @@
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="user-options">
               {% if request.user.is_authenticated %}
-                {% if request.user.is_superuser %}
-                  <a href="" class="dropdown-item">Product Management</a>
-              {% endif %}
                 <a href="{% url 'profile' %}" class="dropdown-item">My Profile</a>
-                <a href="" class="dropdown-item">Order History</a>
                 <a href="{% url 'account_logout' %}" class="dropdown-item">Logout</a>
               {% else %}
                 <a href="{% url 'account_signup' %}" class="dropdown-item">Register</a>

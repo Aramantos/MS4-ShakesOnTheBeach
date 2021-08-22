@@ -95,7 +95,7 @@ body {
     margin-bottom: 0!important;
 }
 
-#logo_logotext{
+#logo-logotext{
     display: flex;
 }
 
@@ -111,6 +111,10 @@ body {
 
 .main-logo-link {
     width: fit-content;
+}
+
+#home-dropdown{
+    top: -82px!important;
 }
 
 #user-controls{
@@ -161,6 +165,11 @@ body {
 
 .dropdown-item:hover {
     color: #9c846e;
+}
+
+.dropdown-item:active {
+    color: white;
+    background-color: #E0BC9C;
 }
 
 .text-shadow {
