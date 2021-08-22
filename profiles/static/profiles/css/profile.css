@@ -67,7 +67,8 @@ td{
 }
 
 .order-history {
-    max-height: 416px; /* height of profile form + submit button */
+    border: 5px solid #8d56a9;
+    overflow: auto;
 }
 
 #profile-update-form .form-control {
