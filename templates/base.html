@@ -40,8 +40,9 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
       integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
     </script>
-    <!-- Stripe -->
     <script src="https://js.stripe.com/v3/"></script>
+    <!-- Stripe -->
+    <script src="{% static 'js/base.js' %}"></script>
   {% endblock %}
 
   {% block extra_js %}
@@ -62,8 +63,8 @@
           <div id="home-dropdown" class="dropdown-menu" aria-labelledby="logo-logotext">
             <a class="dropdown-item" href="{% url 'home' %}">Home</a>
             <a class="dropdown-item" href="{% url 'menu' %}">Menu</a>
+            <a class="dropdown-item" href="{% url 'about' %}">About Us</a>
             <a class="dropdown-item" href="#">Customer Gallery</a>
-            <a class="dropdown-item" href="#">About Us</a>
           </div>
         </div>
       </div>
@@ -127,6 +128,9 @@
 
   {% block page_header %}
   {% endblock %}
+
+  <div id="show-on-hover"><i id="eye" class="fas fa-eye"></i></div>
+  <div><i id="eye-x" class="fas fa-eye-slash"></i></div>
 
   {% block content %}
   {% endblock %}

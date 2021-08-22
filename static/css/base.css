@@ -195,8 +195,8 @@ body {
     z-index: -1;
 
     animation-name: overlay-fade-in;
-    animation-duration: 8s;
-    animation-delay: 0.8s;
+    animation-duration: 6s;
+    /* animation-delay: 0.8s; */
     animation-fill-mode: forwards;
 }
 
@@ -229,6 +229,24 @@ body {
 
 hr{
     border-top: 4px solid rgba(0,0,0,.1);
+}
+
+#eye,
+#eye-x{
+    color: white;
+    text-shadow: 2px 2px black;
+    position: absolute;
+    top: 115px;
+    right: 10px;
+    font-size: 1.5rem;
+}
+
+#eye{
+    opacity: 0;
+}
+
+#eye-x{
+    display: none;
 }
 
 /* ------------------------ Allauth form formatting */
