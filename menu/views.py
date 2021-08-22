@@ -18,15 +18,6 @@ def menu(request):
             menu = menu.filter(category__name__in=categories)
             categories = Category.objects.filter(name__in=categories)
 
-        if 'q' in request.GET:
-            query = request.GET['q']
-            if not query:
-                messages.error(request, "You didn't enter any search criteria!")
-                return redirect(reverse('menu'))
-
-            queries = Q(name__icontains=query) | Q(description__icontains=query)
-            menu = menu.filter(queries)
-
     context = {
         'menu': menu,
         'search_term': query,
