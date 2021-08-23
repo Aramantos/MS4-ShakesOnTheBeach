@@ -16,30 +16,33 @@
 {% endblock %}
 
 {% block content %}
-    <div class="overlay"></div>
-    <div class="container">
-        <div class="row">
-            <div class="col-12 col-md-6">
-                <hr>
-                <h2 class="logo-font mb-4">Gallery Management</h2>
-                <h5 class="text-muted">Edit an Image</h5>
-                <hr>
-            </div>
+<div class="overlay"></div>
+<div id="edit-image-container" class="container">
+    <div class="row">
+        <div class="col-12">
+            <hr>
+            <h2 class="logo-font text-shadow text-center">Gallery Management - Edit an Image</h2>
+            <hr>
         </div>
+    </div>
 
-        <div class="row">
-            <div class="col-12 col-md-6">
-                <form method="POST" action="{% url 'edit_image' image.id %}" class="form mb-2" enctype="multipart/form-data">
+    <div class="row text-md-center">
+        <div class="col-12">
+                <form method="POST" action="{% url 'edit_image' image.id %}" class="form mb-2 text-shadow" enctype="multipart/form-data">
                     {% csrf_token %}
                     {% for field in form %}
+                        {% if field.name != 'image' %}
                             {{ field | as_crispy_field }}
+                        {% else %}
+                            {{ field }}
+                        {% endif %}
                     {% endfor %}
-                    <div class="text-right">
-                        <a class="btn btn-outline-black rounded-0" href="{% url 'gallery' %}">Cancel</a>
-                        <button class="btn btn-black rounded-0" type="submit">Update Image</button>
+                    <div id="add-image-btns">
+                        <a id="cancel" class="btn btn-outline-black rounded-0" href="{% url 'gallery' %}"><i class="far fa-times-circle"></i> Cancel</a>
+                        <button id="add-image" class="btn btn-black rounded-0" type="submit">Edit Image</button>
                     </div>
                 </form>
             </div>            
         </div>
     </div>
-{% endblock %} 
+{% endblock %}

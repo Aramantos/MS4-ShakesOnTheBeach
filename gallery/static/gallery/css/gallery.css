@@ -41,10 +41,10 @@ a:hover{
 }
 
 #add-btn{
-    margin-top: 8px;
+    margin-top: 2px;
     color: #fcfef8;
     background-color: #feed04;
-    font-size: 1.5rem;
+    font-size: 2rem;
     letter-spacing: 3px;
 }
 
@@ -53,7 +53,8 @@ a:hover{
     background-color: #fcfef8;
 }
 
-#add-image-container{
+#add-image-container,
+#edit-image-container{
     background-color: #75bfd4;
     max-width: 70%;
     margin: auto;
@@ -71,6 +72,7 @@ label{
 .form-control{
     width: 80%;
     margin: auto;
+    text-shadow: none;
 }
 
 .form-control-file{
@@ -106,6 +108,23 @@ label{
 
 .card-body{
     background-color: #5aa5b9c7;
+}
+
+.card-body p a{
+    font-size: 1.8rem;
+    letter-spacing: 2px;
+    margin: 0 8%;
+    text-shadow: 0 0 5px black;
+}
+
+#delete{
+    color: #ff0018!important;
+}
+
+input{
+    text-shadow: 0 0 5px black;
+    width: 70%;
+    margin: auto;
 }
 
 @media (min-width: 768px) {
