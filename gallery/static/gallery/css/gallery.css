@@ -6,3 +6,16 @@ body {
     font-family: 'Anton';
     letter-spacing: 1px;
 }
+
+#gallery-controls{
+    display: flex;
+    justify-content: space-between;
+}
+
+.gallery{
+    /* background-color: black; */
+}
+
+.gallery-image{
+    height: 50vh!important;
+}
