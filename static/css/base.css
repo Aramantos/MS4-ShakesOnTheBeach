@@ -199,7 +199,6 @@ body {
 
     animation-name: overlay-fade-in;
     animation-duration: 6s;
-    /* animation-delay: 0.8s; */
     animation-fill-mode: forwards;
 }
 
@@ -366,44 +365,17 @@ hr{
 
 #toast-success{
     border: 4px #28a745 solid!important;
-    /* animation-name: success-border-change;
-    animation-duration: 4s;
-    animation-delay: 4s;
-    animation-fill-mode: forwards; */
 }
 
 #success{
     color: #28a745!important;
     font-size: 1.5rem;
-    /* animation-name: success-text-change;
-    animation-duration: 4s;
-    animation-delay: 4s;
-    animation-fill-mode: forwards; */
 }
 
 #close-success{
     font-size: 3rem;
     color: #28a745!important;
-    /* animation-name: success-close-change;
-    animation-duration: 4s;
-    animation-delay: 4s;
-    animation-fill-mode: forwards; */
 }
-
-/* @keyframes success-border-change {
-    from {border: 4px #28a745 solid;}
-    to {border: 4px darkred solid;}
-  }
-
-  @keyframes success-text-change {
-    from {color: #28a745;}
-    to {color: darkred;}
-  }
-
-  @keyframes success-close-change {
-    from {color: #28a745!important;}
-    to {color: darkred!important;}
-  } */
 
 /* --------------- Warning */
 
