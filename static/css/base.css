@@ -57,6 +57,10 @@
     color: white!important;
 }
 
+.beach{
+    background-image: linear-gradient(#46b8da, #efd6c0, #e0bc9c, #e0bc9c);
+}
+
 /*-------------------------Base Template */
 
 html {
@@ -180,7 +184,6 @@ body {
     text-shadow: 2px 2px red;
 }
 
-
 .border-black {
     border: 1px solid black !important;
 }
@@ -235,7 +238,7 @@ hr{
 #eye-x{
     color: white;
     text-shadow: 2px 2px black;
-    position: absolute;
+    position: fixed;
     top: 115px;
     right: 10px;
     font-size: 1.5rem;
