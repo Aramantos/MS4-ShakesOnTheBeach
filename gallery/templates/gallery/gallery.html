@@ -25,9 +25,11 @@
                     <h2 id="title" class="logo-font text-shadow">
                         <a href="{% url 'gallery' %}">Gallery</a>
                     </h2>
-                    <div class="d-none d-sm-block">
-                        <a id="add-btn" class="btn btn-black rounded-0 text-shadow" href="{% url 'add_image' %}">Add an Image</a>
-                    </div>
+                    {% if request.user.is_authenticated %}
+                        <div class="d-none d-sm-block">
+                            <a id="add-btn" class="btn btn-black rounded-0 text-shadow" href="{% url 'add_image' %}">Add an Image</a>
+                        </div>                    
+                    {% endif %}
                 </div>
                 <hr>
             </div>
@@ -47,7 +49,7 @@
                                     <div class="card-body item-card-body">
                                         <p class="mb-0 text-center">
                                             <a href="{% url 'edit_image' image.id %}">Edit</a>
-                                            <a class="text-danger" href="{% url 'delete_image' image.id %}">Delete</a>
+                                            <a id="delete" href="{% url 'delete_image' image.id %}">Delete</a>
                                         </p>
                                     </div>                                
                                 {% endif %}
