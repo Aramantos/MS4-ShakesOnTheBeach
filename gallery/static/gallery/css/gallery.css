@@ -5,17 +5,118 @@ body {
     color: white;
     font-family: 'Anton';
     letter-spacing: 1px;
+    font-size: 1.5rem;
+}
+
+.logo-font{
+    color: #ffed07;
+}
+
+#gallery-header{
+    background-color: #75bfd4e0;
+    max-width: 90%;
+    margin: auto;
+}
+
+a{
+    color: unset;
+}
+
+a:hover{
+    color: unset;
+}
+
+#title{
+    color: #ffed07!important;
+    font-size: 3rem;
 }
 
 #gallery-controls{
     display: flex;
-    justify-content: space-between;
-}
-
-.gallery{
-    /* background-color: black; */
+    justify-content: space-evenly;
 }
 
 .gallery-image{
     height: 50vh!important;
+}
+
+#add-btn{
+    margin-top: 8px;
+    color: #fcfef8;
+    background-color: #feed04;
+    font-size: 1.5rem;
+    letter-spacing: 3px;
+}
+
+#add-btn:hover{
+    color: #feed04;
+    background-color: #fcfef8;
+}
+
+#add-image-container{
+    background-color: #75bfd4;
+    max-width: 70%;
+    margin: auto;
+}
+
+#add-image-title{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+label{
+    text-shadow: 0 0 5px black;
+}
+
+.form-control{
+    width: 80%;
+    margin: auto;
+}
+
+.form-control-file{
+    text-shadow: 0 0 5px black;
+    letter-spacing: 1px;
+}
+
+#add-image-btns{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#cancel,
+#add-image{
+    font-size: 1.5rem;
+    color: white;
+    text-shadow: 0 0 5px black;
+    letter-spacing: 1px;
+}
+
+#add-image{
+    background-color: #feed04;
+}
+
+#add-image:hover{
+    color: #feed04;
+    background-color: white;
+}
+
+.card{
+    background: none;
+}
+
+.card-body{
+    background-color: #5aa5b9c7;
+}
+
+@media (min-width: 768px) {
+    .form-control-file{
+        width: 80%;
+        margin: auto;
+    }
+}
+
+@media (max-width: 768px) {
+    .form-control{
+        width: 100%;
+    }
 }
