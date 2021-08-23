@@ -38,3 +38,45 @@ def add_image(request):
     }
 
     return render(request, template, context)
+
+
+@login_required
+def edit_image(request, image_id):
+    """ Edit an image in the gallery """
+    if not request.user.is_superuser:
+        messages.error(request, 'Sorry, only authorized personel can do that.')
+        return redirect(reverse('home'))
+
+    image = get_object_or_404(GalleryImages, pk=image_id)
+    if request.method == 'POST':
+        form = ImageForm(request.POST, request.FILES, instance=image)
+        if form.is_valid():
+            form.save()
+            messages.success(request, 'Successfully updated the image!')
+            return redirect(reverse('gallery'))
+        else:
+            messages.error(request, 'Failed to update image. Please ensure the form is valid.')
+    else:
+        form = ImageForm(instance=image)
+        messages.info(request, f'You are editing {image.image}')
+
+    template = 'gallery/edit_image.html'
+    context = {
+        'form': form,
+        'image': image,
+    }
+
+    return render(request, template, context)
+
+
+@login_required
+def delete_image(request, image_id):
+    """ Delete an image from the gallery """
+    if not request.user.is_superuser:
+        messages.error(request, 'Sorry, only authorized personel can do that.')
+        return redirect(reverse('home'))
+
+    image = get_object_or_404(GalleryImages, pk=image_id)
+    image.delete()
+    messages.success(request, 'Image deleted!')
+    return redirect(reverse('gallery'))

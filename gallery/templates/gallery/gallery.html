@@ -45,6 +45,8 @@
                                 {% if request.user.is_superuser %}
                                     <div class="card-body item-card-body">
                                         <p class="mb-0 text-center">
+                                            <a href="{% url 'edit_image' image.id %}">Edit</a>
+                                            <a class="text-danger" href="{% url 'delete_image' image.id %}">Delete</a>
                                         </p>
                                     </div>                                
                                 {% endif %}
