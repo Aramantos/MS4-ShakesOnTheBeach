@@ -22,11 +22,10 @@ body {
     /* flex: 0 0 50%!important; */
     margin: auto;
 
-    animation: shake 0.82s cubic-bezier(.36,.07,.19,.97) both;
+    animation-name: shake;
+    animation-duration: 1s;
     animation-delay: 3s;
     transform: translate3d(0, 0, 0);
-    backface-visibility: hidden;
-    perspective: 1000px;
 }
   
 @keyframes about {
@@ -69,11 +68,10 @@ p{
 .text-boxes{
     background-color: #3e837fb0;
 
-    animation: shake 0.82s cubic-bezier(.36,.07,.19,.97) both;
+    animation-name: shake;
+    animation-duration: 1s;
     animation-delay: 3s;
     transform: translate3d(0, 0, 0);
-    backface-visibility: hidden;
-    perspective: 1000px;
 }
 
 #why,
@@ -104,11 +102,10 @@ p{
 footer{
     background-color: #30cac1b0;
 
-    animation: shake 0.82s cubic-bezier(.36,.07,.19,.97) both;
+    animation-name: shake;
+    animation-duration: 1s;
     animation-delay: 3s;
     transform: translate3d(0, 0, 0);
-    backface-visibility: hidden;
-    perspective: 1000px;
 }
 
 .list-unstyled li{
