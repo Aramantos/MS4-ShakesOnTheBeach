@@ -24,6 +24,11 @@
                 <h2 class="logo-font mb-4 white-text text-shadow">Thank You! We apprecaite your business!</h2>
                 <hr>
                 <p class="white-text text-shadow">Your order information is below. A confirmation email will be sent to <strong id="email">{{ order.email }}</strong></p>
+                {% if request.user.is_authenticated %}
+                    <p class="white-text text-shadow"><strong id="free">Want a free meal?</strong> <br> Take a picture of your meal and upload it <a class="yellow-text" target="_blank" href="{% url 'gallery' %}">here</a></p>
+                {% else %}
+                    <p class="white-text text-shadow">Want a free meal? <br>Create an <a class="yellow-text" target="_blank" href="{% url 'account_signup' %}">account</a>, take a picture of your meal and upload it <a class="yellow-text" target="_blank" href="{% url 'gallery' %}">here</a></p>
+                {% endif %}
             </div>
         </div>
             <div class="row">
