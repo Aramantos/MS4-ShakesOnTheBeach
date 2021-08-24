@@ -1,0 +1,141 @@
+body {
+    background: url('/media/beach-gallery.jpeg') no-repeat center center fixed;
+    background-size: cover;
+    height: calc(100vh - 164px);
+    color: white;
+    font-family: 'Anton';
+    letter-spacing: 1px;
+    font-size: 1.5rem;
+}
+
+.logo-font{
+    color: #ffed07;
+}
+
+#gallery-header{
+    background-color: #75bfd4e0;
+    max-width: 90%;
+    margin: auto;
+}
+
+a{
+    color: unset;
+}
+
+a:hover{
+    color: unset;
+}
+
+#title{
+    color: #ffed07!important;
+    font-size: 3rem;
+}
+
+#gallery-controls{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.gallery-image{
+    height: 50vh!important;
+}
+
+#add-btn{
+    margin-top: 2px;
+    color: #fcfef8;
+    background-color: #feed04;
+    font-size: 2rem;
+    letter-spacing: 3px;
+}
+
+#add-btn:hover{
+    color: #feed04;
+    background-color: #fcfef8;
+}
+
+#add-image-container,
+#edit-image-container{
+    background-color: #75bfd4;
+    max-width: 70%;
+    margin: auto;
+}
+
+#add-image-title{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+label{
+    text-shadow: 0 0 5px black;
+}
+
+.form-control{
+    width: 80%;
+    margin: auto;
+    text-shadow: none;
+}
+
+.form-control-file{
+    text-shadow: 0 0 5px black;
+    letter-spacing: 1px;
+}
+
+#add-image-btns{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#cancel,
+#add-image{
+    font-size: 1.5rem;
+    color: white;
+    text-shadow: 0 0 5px black;
+    letter-spacing: 1px;
+}
+
+#add-image{
+    background-color: #feed04;
+}
+
+#add-image:hover{
+    color: #feed04;
+    background-color: white;
+}
+
+.card{
+    background: none;
+}
+
+.card-body{
+    background-color: #5aa5b9c7;
+}
+
+.card-body p a{
+    font-size: 1.8rem;
+    letter-spacing: 2px;
+    margin: 0 8%;
+    text-shadow: 0 0 5px black;
+}
+
+#delete{
+    color: #ff0018!important;
+}
+
+input{
+    text-shadow: 0 0 5px black;
+    width: 70%;
+    margin: auto;
+}
+
+@media (min-width: 768px) {
+    .form-control-file{
+        width: 80%;
+        margin: auto;
+    }
+}
+
+@media (max-width: 768px) {
+    .form-control{
+        width: 100%;
+    }
+}
