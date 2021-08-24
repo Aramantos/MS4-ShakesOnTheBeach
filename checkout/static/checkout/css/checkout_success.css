@@ -45,6 +45,22 @@ body {
     font-size: 1.6rem;
 }
 
+a:hover{
+    color: #ffc107;
+}
+
+#free{
+    animation-name: color-switcher;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes color-switcher {
+    0% {color: white;}
+    50% {color: #fcf32c}
+    100% {color: white;}
+  }
+
 @media (max-width: 390px) {
     #email{
         font-size: 1.3rem;
