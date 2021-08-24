@@ -2,7 +2,7 @@
 
 Live Link - [https://shakes-on-the-beach.herokuapp.com/](https://shakes-on-the-beach.herokuapp.com/)
 
-![responsiveness](static/responsiveness.png "image_tooltip")
+![responsiveness-image](static/responsiveness.png "image_tooltip")
 
 ---
 
@@ -40,7 +40,7 @@ Live Link - [https://shakes-on-the-beach.herokuapp.com/](https://shakes-on-the-b
 
 Shakes on the beach is a sea side cafe offering an assortment of food and drinks.
 
-This web application is designed to allow the user to browse the available options and build a basket. The user can then then make a card payment and the order will be proccessed.
+This web application is designed to allow the user to browse the available products and build a basket. The user can then then make a card payment and the order will be proccessed.
 
 ---
 
@@ -59,8 +59,7 @@ As a user, I would like to...
 - Adjust the basket by increaseing or decreasing the amount of an item, or remove the item entirely.
 - Enter my delivery and credit card information so I can submit my order to be delievered to my chosen address.
 - Recieve a confirmation of my order with the order,billing and delivery details.
-- The option of creating a user profile to store my information to process my future orders more easily.
-- 
+- Have option of creating a user profile to store my information to process my future orders more easily.
 
 #### **Developer Stories**
 
@@ -73,8 +72,6 @@ As a user, I would like to...
 ### **Strategy**
 
 #### **Project Goals:**
-
-
 
 - 
 - 
@@ -100,47 +97,79 @@ As a user, I would like to...
 
 Navbar:
 
-- 
-- 
-- 
-- 
+- Clicking on title or title icon, will navigate the user back to the homepage.
+- Account
+  - Register - Navigate the user to the sign up page to create a user profile
+  - Login - Navigate the user to the login page so the user can login to their user profile
+- The basket icon or the total cost of products present in the basket, will navigate the user to the basket page
 
 Menu Page:
 
-- 
-- 
-- 
-- 
+- Menu Navbar
+  - Clicking the "MENU" anchor will refresh the menu page showing all products available
+  - Nav Items
+    - Burgers - will show all burgers available on the store
+    - Pizza - will show all pizzas available on the store
+    - Sandwhich - will show all sandwhiches available on the store
+    - Salad - will show all salads available on the store
+    - Shakes - will show all shakes available on the store
+    - Drinks - will show all drinks available on the store
+- Each product will have its own container, where the image can be clicked to bring the user to the product details page of the clicked product
 
 Menu Product Details Page:
 
-- 
-- 
-- 
-- 
+- Clicking on the product image will open the image in a new tab for better visibility
+- A quantity form for a user to alter the value of the quantity to be added to the basket
+  - The "+" will increase the value of the quantity by one
+  - The "-" will decrease the value of the quantity by one
+  - The user click on the field manually and type the number they wish to add to the basket
+- < Keep Shopping - will return the user to the menu page
+- Add to Basket - will take product on the page, and the quantity in the selector, and add that ammount of the product into the basket
 
 Basket Page:
 
-- 
-- 
-- 
-- 
+- A quantity form for a user to alter the value of the quantity currently in the basket
+  - The "+" will increase the value of the quantity by one
+  - The "-" will decrease the value of the quantity by one
+  - The user click on the field manually and type the number for the the quantity they want in the basket
+- Update - the basket will be updated with the quantity that is shown in the selector
+- Remove - the item in which the "Remove" anchor is associated with will be removed from the basket
+- < Keep Shopping - will return the user to the menu page
+- Secure Checkout - will navigate the user to the checkout page with the basket on the current page
 
 Checkout Page:
 
-- 
-- 
-- 
-- 
+- Input fields
+  - Full Name - User must enter their name
+  - E-mail - User must enter their e-mail
+  - Phone Number - User must enter their phone number
+  - Street Address 1 - User must enter the first line of their address
+  - Street Address 2 - User can enter the second line of their address 
+  - Town or City - User must enter their town or city
+  - Postal Code - User can enter their postal code
+  - County, State or Locality - User can enter their county, state or locality
+- Create an Account - will navigate the user to the sign up page
+- Login - will navigate the user to the login page
+- Payment input field - the user must enter their credit card information to proceed with the order
+- < Adjust Basket - will return the user to the basket page
+- Complete Order - will attempt to process the users order, if successful will navigate the user to the checkout success page
 
 Checkout Success Page:
 
-- 
-- 
-- 
-- 
+- This page will display all the information relevant to the order
+  - Order Info
+    - Order Number
+    - Order Date
+  - Order Details
+    - A list of the products that were in the basket of the order
+  - Deliveriy Details
+    - The Full Name, Address, County, Town or City, Post Code and Phone Number
+  - Billing Information
+    - Order Total
+    - Delivery Charges
+    - Grand Total
 
-Profile Page:
+Sign Up Page:
 
 - 
 - 
@@ -154,7 +183,7 @@ Login Page:
 - 
 - 
 
-Sign Up Page:
+Profile Page:
 
 - 
 - 
@@ -169,6 +198,13 @@ Password Reset Page:
 - 
 
 Verification Pages:
+
+- Verification Sent - This page informs you to to check your inbox as the link needed to finalize the profile setup proccess.
+- Verification Sent - This page informs you to to check your inbox as the link needed to finalize the profile setup proccess.
+- 
+- Verification Sent - This page informs you to to check your inbox as the link needed to finalize the profile setup proccess.
+
+Toasts:
 
 - 
 - 
@@ -191,6 +227,138 @@ Error Pages:
 ### **Structure**
 
 #### **Interaction Design:**
+
+Navbar:
+
+- Clicking on title or title icon, will navigate the user back to the homepage.
+- Account
+  - Register - Navigate the user to the sign up page to create a user profile
+  - Login - Navigate the user to the login page so the user can login to their user profile
+- The basket icon or the total cost of products present in the basket, will navigate the user to the basket page
+
+Menu Page:
+
+- Menu Navbar
+  - Clicking the "MENU" anchor will refresh the menu page showing all products available
+  - Nav Items
+    - Burgers - will show all burgers available on the store
+    - Pizza - will show all pizzas available on the store
+    - Sandwhich - will show all sandwhiches available on the store
+    - Salad - will show all salads available on the store
+    - Shakes - will show all shakes available on the store
+    - Drinks - will show all drinks available on the store
+- Each product will have its own container, where the image can be clicked to bring the user to the product details page of the clicked product
+
+Menu Product Details Page:
+
+- Clicking on the product image will open the image in a new tab for better visibility
+- A quantity form for a user to alter the value of the quantity to be added to the basket
+  - The "+" will increase the value of the quantity by one
+  - The "-" will decrease the value of the quantity by one
+  - The user click on the field manually and type the number they wish to add to the basket
+- < Keep Shopping - will return the user to the menu page
+- Add to Basket - will take product on the page, and the quantity in the selector, and add that ammount of the product into the basket
+
+Basket Page:
+
+- A quantity form for a user to alter the value of the quantity currently in the basket
+  - The "+" will increase the value of the quantity by one
+  - The "-" will decrease the value of the quantity by one
+  - The user click on the field manually and type the number for the the quantity they want in the basket
+- Update - the basket will be updated with the quantity that is shown in the selector
+- Remove - the item in which the "Remove" anchor is associated with will be removed from the basket
+- < Keep Shopping - will return the user to the menu page
+- Secure Checkout - will navigate the user to the checkout page with the basket on the current page
+
+Checkout Page:
+
+- Input fields
+  - Full Name - User must enter their name
+  - E-mail - User must enter their e-mail
+  - Phone Number - User must enter their phone number
+  - Street Address 1 - User must enter the first line of their address
+  - Street Address 2 - User can enter the second line of their address 
+  - Town or City - User must enter their town or city
+  - Postal Code - User can enter their postal code
+  - County, State or Locality - User can enter their county, state or locality
+- Create an Account - will navigate the user to the sign up page
+- Login - will navigate the user to the login page
+- Payment input field - the user must enter their credit card information to proceed with the order
+- < Adjust Basket - will return the user to the basket page
+- Complete Order - will attempt to process the users order, if successful will navigate the user to the checkout success page
+
+Checkout Success Page:
+
+- This page will display all the information relevant to the order
+  - Order Info
+    - Order Number
+    - Order Date
+  - Order Details
+    - A list of the products that were in the basket of the order
+  - Deliveriy Details
+    - The Full Name, Address, County, Town or City, Post Code and Phone Number
+  - Billing Information
+    - Order Total
+    - Delivery Charges
+    - Grand Total
+
+Sign Up Page:
+
+- Sign In - an anchor tag that will navigate the user back to the login page if they already have an account
+- Sign Up Form - List of text inputs required for a user to set up a user profile
+  - E-mail Address
+  - E-mail Address confirmation
+  - Username
+  - Password
+  - Password (again)
+- Back to Login - An anchor tag that will navigate the user back to the login page if they already have an account
+- Sign Up - A button to submit the form and create a user profile if what the user has enetered it valid
+
+Verification Pages:
+
+- E-mail confirmation - A confrim button verifies the profiles e-mail address so the account can be used on the site.
+- 
+- 
+- 
+
+Login Page:
+
+- 
+- 
+- 
+- 
+
+Profile Page:
+
+- 
+- 
+- 
+- 
+
+Password Reset Page:
+
+- 
+- 
+- 
+- 
+
+Toasts:
+
+- 
+- 
+- 
+- 
+
+Error Pages:
+
+- 
+- 
+- 
+- 
+
+---
+
+#### **Information Design:**
 
 Navbar:
 
@@ -264,10 +432,31 @@ Password Reset Page:
 
 Verification Pages:
 
+- Verification Sent - This page will inform you that you should have an email in your inbox that will finalize the setup proccess.
+- Email Confirmation - This page will advise you of the email you are confiming above the confirmation button.
 - 
 - 
-- 
-- 
+
+Toasts:
+
+Examples of potential messsages a user will see in their toast pop ups while navigating the site
+
+- Success
+  - You successfully added a product to your basket.
+  - You successfully updated the quantity of a product to your basket.
+  - You successfully removed a product to your basket.
+  - You successfully proccessed the order.
+  - You confirmed you email address from pressing confirm on the verify email link.
+  - You successfully changed the password for your profile.
+  - You successfully signed out of your profile.
+- Alert
+  - When signing up it will alert when we have sent you an email to verify your e-mail address.
+  - When viewing an order from your order history an alert will confirm that this a "past" confirmation rather than a new order.
+- Warning
+  - If there is an issue with stripe
+- Error
+  - When there is nothing in your basket
+  - If there was a problem adding, updating or removing an item from your basket
 
 Error Pages:
 
@@ -311,35 +500,35 @@ Error Pages:
 ---
 
 ### Hompage
-![alt_text](static/wireframes/1.home-page.png "image_tooltip")
+![homepage](static/wireframes/1.home-page.png "image_tooltip")
 ### Menu on Large Screens
-![alt_text](static/wireframes/2.menu-large.png "image_tooltip")
+![menu](static/wireframes/2.menu-large.png "image_tooltip")
 ### Menu on Medium Screens
-![alt_text](static/wireframes/3.menu-mid.png "image_tooltip")
+![menu](static/wireframes/3.menu-mid.png "image_tooltip")
 ### Menu on Small Screens
-![alt_text](static/wireframes/4.menu-small.png "image_tooltip")
+![menu](static/wireframes/4.menu-small.png "image_tooltip")
 ### Menu Product Details on Large Screens
-![alt_text](static/wireframes/5.menu-product-details-large.png "image_tooltip")
+![product](static/wireframes/5.menu-product-details-large.png "image_tooltip")
 ### Menu Product Details on Large Screens with Toasts
-![alt_text](static/wireframes/6.menu-product-details-with-toast-large.png "image_tooltip")
+![product](static/wireframes/6.menu-product-details-with-toast-large.png "image_tooltip")
 ### Menu Product Details on Medium and Small Screens
-![alt_text](static/wireframes/7.menu-product-details-mid&small.png "image_tooltip")
+![product](static/wireframes/7.menu-product-details-mid&small.png "image_tooltip")
 ### Menu Product Details on Medium and Small Screens with Toasts
-![alt_text](static/wireframes/8.menu-product-details-with-toast-mid&small.png "image_tooltip")
+![product](static/wireframes/8.menu-product-details-with-toast-mid&small.png "image_tooltip")
 ### Basket
-![alt_text](static/wireframes/9.basket.png "image_tooltip")
+![basket](static/wireframes/9.basket.png "image_tooltip")
 ### Basket on Medium and Small Screens
-![alt_text](static/wireframes/10.basket-mid&small.png "image_tooltip")
+![basket](static/wireframes/10.basket-mid&small.png "image_tooltip")
 ### Checkout
-![alt_text](static/wireframes/11.checkout.png "image_tooltip")
+![checkout](static/wireframes/11.checkout.png "image_tooltip")
 ### Checkout on Medium and Small Screens
-![alt_text](static/wireframes/12.checkout-mid&small.png "image_tooltip")
+![checkout](static/wireframes/12.checkout-mid&small.png "image_tooltip")
 ### Checkout Success
-![alt_text](static/wireframes/13.checkout-success.png "image_tooltip")
+![checkout](static/wireframes/13.checkout-success.png "image_tooltip")
 ### Checkout Success with Toasts
-![alt_text](static/wireframes/14.checkout-success-with-toast.png "image_tooltip")
+![checkout](static/wireframes/14.checkout-success-with-toast.png "image_tooltip")
 ### Checkout Success on Medium and Small Screens
-![alt_text](static/wireframes/15.checkout-success-small&mid.png "image_tooltip")
+![checkout](static/wireframes/15.checkout-success-small&mid.png "image_tooltip")
 
 ---
 
@@ -458,7 +647,7 @@ I have tested the website on various physical devices (iPad, iPad Air, Macbook P
 
 ### **Defensive Design**
 
-- 
+- User can navigate throughout the site without the need to press the "back" or "forward" buttons in the browser interface.
 - 
 - 
 - 
@@ -563,89 +752,30 @@ Error Pages:
 ### **Automated**
 ---
 
-Navbar:
+|         Test Case - User Profiles         | Result |
+|:-----------------------------------------:|:------:|
+|          Create a User Profile            |  Pass  |
+|    Logging in with a verified account     |  Pass  |
+|       Logging out of a User Profile       |  Pass  |
 
-- 
-- 
-- 
-- 
+---
 
-Menu Page:
+|                 Test Case - Creating an Order                | Result |
+|:------------------------------------------------------------:|:------:|
+|                Adding a product to the basket                |  Pass  |
+|       Updating the quantity of a product in the basket       |  Pass  |
+|              Removing a product from the basket              |  Pass  |
+|             Taking a basket to the checkout page             |  Pass  |
+| Filling out the form and payment details to process an order |  Pass  |
 
-- 
-- 
-- 
-- 
+---
 
-Menu Product Details Page:
-
-- 
-- 
-- 
-- 
-
-Basket Page:
-
-- 
-- 
-- 
-- 
-
-Checkout Page:
-
-- 
-- 
-- 
-- 
-
-Checkout Success Page:
-
-- 
-- 
-- 
-- 
-
-Profile Page:
-
-- 
-- 
-- 
-- 
-
-Login Page:
-
-- 
-- 
-- 
-- 
-
-Sign Up Page:
-
-- 
-- 
-- 
-- 
-
-Password Reset Page:
-
-- 
-- 
-- 
-- 
-
-Verification Pages:
-
-- 
-- 
-- 
-- 
-
-Error Pages:
-
-- 
-- 
-- 
-- 
+|              Test Case - Error Testing             | Result |
+|:--------------------------------------------------:|:------:|
+| Trying to create a user with an already used email |  Pass  |
+|     Trying to log in with an unverified profile    |  Pass  |
+|            Trying to access the checkout page without any items in your basket            |  Pass  |
+| Trying to access the profile page without having signed into a account throws a 404 error |  Pass  |
 
 ---
 
@@ -864,6 +994,8 @@ Favicon
 Pictures
 
 - All photos with names ending in "-stock" in the media folder were taken from [shutterstock](https://www.shutterstock.com/)
+- About page [image](https://business.facebook.com/ParadiseCoveBeachCafe/photos/a.594035813999865/5517528321650565/?type=3&theater)
+- Gallery page [image](https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/beach-quotes-1559667853.jpg)
 - Burgers
   - [Cheese Burger](https://assets.epicurious.com/photos/5c745a108918ee7ab68daf79/master/pass/Smashburger-recipe-120219.jpg)
   - [Bacon Cheese Burger](https://simply-delicious-food.com/wp-content/uploads/2015/07/Bacon-and-cheese-burgers-3-480x270.jpg)
