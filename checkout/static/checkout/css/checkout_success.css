@@ -55,11 +55,26 @@ a:hover{
     animation-iteration-count: infinite;
 }
 
+#enjoy{
+    color: #fcf32c!important;
+    margin: 0;
+    display: flex;
+    justify-content: space-evenly;
+}
+
 @keyframes color-switcher {
     0% {color: white;}
     50% {color: #fcf32c}
     100% {color: white;}
-  }
+}
+
+.fa-smile-beam{
+    margin-top: 9px;
+}
+
+#copy{
+    display: none;
+}
 
 @media (max-width: 390px) {
     #email{
