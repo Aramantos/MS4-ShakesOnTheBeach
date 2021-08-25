@@ -1,16 +1,4 @@
 $(document).ready(function () {
-
-    function clipboard() {
-        var copyText = document.getElementById("myInput");
-
-        copyText.select();
-        copyText.setSelectionRange(0, 99999); /* For mobile devices */
-
-        navigator.clipboard.writeText(copyText.value);
-        
-        alert("Copied the order number: " + copyText.value);
-    }
-
     $('#collection').click(function() {
         $('#collection').prop("disabled", true);
         $('#delivery-btn').prop("disabled", false);

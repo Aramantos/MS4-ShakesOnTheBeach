@@ -84,14 +84,16 @@ select option[value=""] {
     font-size: 1.5rem;
 }
 
-#submit-button{
+#submit-button,
+#collect-submit{
     background-color: white;
     color: #fcf32c;
     text-shadow: 0px 0px 6px black;
     font-size: 1.5rem;
 }
 
-#submit-button:hover{
+#submit-button:hover,
+#collect-submit:hover{
     background-color: #fcf32c;
     color: white;
 }
