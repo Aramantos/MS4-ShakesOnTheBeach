@@ -2,7 +2,7 @@ body {
     background: url('/media/beach-gallery.jpeg') no-repeat center center fixed;
     background-size: cover;
     height: calc(100vh - 164px);
-    color: BLACK;
+    color: white;
     font-family: 'Anton';
     letter-spacing: 1px;
     font-size: 1.5rem;
@@ -109,6 +109,11 @@ label{
 
 .card-body{
     background-color: #5aa5b9c7;
+    padding: 0;
+}
+
+.card-body p{
+    margin-top: 17px;
 }
 
 .card-body p a{
