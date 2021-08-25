@@ -21,12 +21,12 @@
     <div class="row">
         <div class="col-12">
             <hr>
-            <h2 class="logo-font text-shadow text-center">Gallery Management - Edit an Image</h2>
+            <h2 class="logo-font text-shadow text-left">Gallery Management - Edit an Image</h2>
             <hr>
         </div>
     </div>
 
-    <div class="row text-md-center">
+    <div class="row text-md-left">
         <div class="col-12">
                 <form method="POST" action="{% url 'edit_image' image.id %}" class="form mb-2 text-shadow" enctype="multipart/form-data">
                     {% csrf_token %}
