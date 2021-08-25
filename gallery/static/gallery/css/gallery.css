@@ -2,7 +2,7 @@ body {
     background: url('/media/beach-gallery.jpeg') no-repeat center center fixed;
     background-size: cover;
     height: calc(100vh - 164px);
-    color: white;
+    color: BLACK;
     font-family: 'Anton';
     letter-spacing: 1px;
     font-size: 1.5rem;
@@ -86,7 +86,8 @@ label{
 }
 
 #cancel,
-#add-image{
+#add-image,
+#close{
     font-size: 1.5rem;
     color: white;
     text-shadow: 0 0 5px black;
@@ -125,6 +126,37 @@ input{
     text-shadow: 0 0 5px black;
     width: 70%;
     margin: auto;
+}
+
+.modal-content{
+    background-color: #dc3545;
+    color: white;
+    text-shadow: 0 0 5px black;
+}
+
+.modal-title{
+    line-height: 2;
+}
+
+.modal-header button span{
+    color: black;
+    font-size: 2rem;
+    font-family: auto;
+}
+
+#delete-confirm{
+    color: #dc3544;
+    background: aliceblue;
+    padding: 5px 10px;
+    text-shadow: none;
+}
+
+#delete-confirm:hover{
+    color: white;
+    background-color: #dc3544;
+    border: 3px solid white;
+    padding: 2px 7px;
+    text-decoration: unset;
 }
 
 @media (min-width: 768px) {
