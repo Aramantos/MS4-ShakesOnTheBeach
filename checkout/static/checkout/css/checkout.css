@@ -106,3 +106,8 @@ select option[value=""] {
 a:hover{
     color: #fcf32c;
 }
+
+#checkout-controls{
+    display: flex;
+    justify-content: space-between;
+}

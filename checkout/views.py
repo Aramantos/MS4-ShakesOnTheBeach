@@ -4,7 +4,7 @@ from django.views.decorators.http import require_POST
 from django.contrib import messages
 from django.conf import settings
 
-from .forms import OrderForm
+from .forms import OrderForm, OrderFormCollection
 from .models import Order, OrderLineItem
 
 from menu.models import Product
@@ -39,7 +39,8 @@ def checkout(request):
 
     if request.method == 'POST':
         basket = request.session.get('basket', {})
-
+        # import pdb
+        # pdb.set_trace()
         form_data = {
             'full_name': request.POST['full_name'],
             'email': request.POST['email'],
@@ -67,19 +68,10 @@ def checkout(request):
                             quantity=item_data,
                         )
                         order_line_item.save()
-                    else:
-                        for size, quantity in item_data['items_by_size'].items():
-                            order_line_item = OrderLineItem(
-                                order=order,
-                                product=product,
-                                quantity=quantity,
-                                product_size=size,
-                            )
-                            order_line_item.save()
                 except Product.DoesNotExist:
                     messages.error(request, (
                         "One of the products in your basket wasn't found in our database. "
-                        "Please call us for assistance!")
+                        "Please contact us for assistance!")
                     )
                     order.delete()
                     return redirect(reverse('view_basket'))
@@ -172,6 +164,111 @@ def checkout_success(request, order_number):
         del request.session['basket']
 
     template = 'checkout/checkout_success.html'
+    context = {
+        'order': order,
+    }
+
+    return render(request, template, context)
+
+
+def checkout_collection(request):
+    if request.method == 'POST':
+        basket = request.session.get('basket', {})
+
+        form_data = {
+            'full_name': request.POST['full_name'],
+            'email': request.POST['email'],
+            'phone_number': request.POST['phone_number'],
+        }
+        order_collection_form = OrderFormCollection(form_data)
+        if order_collection_form.is_valid():
+            order = order_collection_form.save(commit=False)
+            order.original_basket = json.dumps(basket)
+            order.save()
+            for item_id, item_data in basket.items():
+                try:
+                    product = Product.objects.get(id=item_id)
+                    if isinstance(item_data, int):
+                        order_line_item = OrderLineItem(
+                            order=order,
+                            product=product,
+                            quantity=item_data,
+                        )
+                        order_line_item.save()
+                except Product.DoesNotExist:
+                    messages.error(request, (
+                        "One of the products in your basket wasn't found in our database. "
+                        "Please contact us for assistance!")
+                    )
+                    order.delete()
+                    return redirect(reverse('view_basket'))
+
+            request.session['save_info'] = 'save-info' in request.POST
+            return redirect(reverse('checkout_success_collection', args=[order.order_number]))
+        else:
+            messages.error(request, 'There was an error with your form. \
+                Please double check your information.')
+    else:
+        basket = request.session.get('basket', {})
+        if not basket:
+            messages.error(request, "There's nothing in your basket at the moment")
+            return redirect(reverse('menu'))
+
+        current_basket = basket_contents(request)
+        total = current_basket['total']
+
+        # Attempt to prefill the form with any info the user maintains in their profile
+        if request.user.is_authenticated:
+            try:
+                profile = UserProfile.objects.get(user=request.user)
+                order_collection_form = OrderFormCollection(initial={
+                    'full_name': profile.user.get_full_name(),
+                    'email': profile.user.email,
+                    'phone_number': profile
+                })
+            except UserProfile.DoesNotExist:
+                order_collection_form = OrderFormCollection()
+        else:
+            order_collection_form = OrderFormCollection()
+
+    template = 'checkout/checkout.html'
+    context = {
+        'order_collection_form': order_collection_form,
+    }
+
+    return render(request, template, context)
+
+
+def checkout_success_collection(request, order_number):
+    """
+    Handle successful checkouts
+    """
+    save_info = request.session.get('save_info')
+    order = get_object_or_404(Order, order_number=order_number)
+
+    if request.user.is_authenticated:
+        profile = UserProfile.objects.get(user=request.user)
+        # Attach the user's profile to the order
+        order.user_profile = profile
+        order.save()
+
+        # Save the user's info
+        if save_info:
+            profile_data = {
+                'default_phone_number': order.phone_number,
+            }
+            user_profile_form = UserProfileForm(profile_data, instance=profile)
+            if user_profile_form.is_valid():
+                user_profile_form.save()
+
+    messages.success(request, f'Order successfully processed! \
+        Your order number is {order_number}. A confirmation \
+        email will be sent to {order.email}.')
+
+    if 'basket' in request.session:
+        del request.session['basket']
+
+    template = 'checkout/checkout_success_collection.html'
     context = {
         'order': order,
     }
