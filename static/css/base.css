@@ -46,7 +46,7 @@
 }
 
 .yellow-text{
-    color: #fcf32c;
+    color: #fcf32c!important;
 }
 
 .darkred-text{
@@ -282,6 +282,10 @@ hr{
     color: white!important;
     text-shadow: 0 0 5px black;
     padding: 5px;
+}
+
+a{
+    cursor: pointer;
 }
 
 /* ------------------------ Allauth form formatting */
