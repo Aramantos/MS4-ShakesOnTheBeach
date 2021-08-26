@@ -249,6 +249,41 @@ hr{
     display: none;
 }
 
+#hours-content{
+    margin-top: 40%;
+    background-color: #de9999!important;
+    color: white!important;
+    text-shadow: 0 0 5px black;
+}
+
+#hours-btn{
+    color: #a97e58!important;
+    letter-spacing: 1.5px;
+    font-size: 1.2rem;
+}
+
+#hours-body{
+    display: contents;
+    font-size: 1.5rem;
+}
+
+#hours-table{
+    border: 5px solid #a47ede!important;
+}
+
+#hours-table th{
+    font-size: 1.7rem;
+    padding: 10px;
+    text-decoration: underline;
+    border-bottom: 5px solid #a47ede!important;
+}
+
+#hours-table td{
+    color: white!important;
+    text-shadow: 0 0 5px black;
+    padding: 5px;
+}
+
 /* ------------------------ Allauth form formatting */
 
 .allauth-form-inner-content p {

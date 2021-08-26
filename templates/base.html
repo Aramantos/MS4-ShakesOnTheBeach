@@ -67,6 +67,9 @@
             <a class="dropdown-item" href="{% url 'home' %}">Home</a>
             <a class="dropdown-item" href="{% url 'menu' %}">Menu</a>
             <a class="dropdown-item" href="{% url 'about' %}">About Us</a>
+            <a id="hours-btn" type="button" class="btn dropdown-item" data-toggle="modal" data-target="#openingHours">
+              Opening Hours
+            </a>
             <a class="dropdown-item" href="{% url 'gallery' %}">Customer Gallery</a>
           </div>
         </div>
@@ -110,6 +113,50 @@
       </div>
     </div>
   </header>
+
+  <!-- Modal -->
+  <div class="modal fade" id="openingHours" tabindex="-1" role="dialog" aria-labelledby="openingHoursLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div id="hours-content" class="modal-content">
+        <div id="hours-body" class="modal-body">
+          <table id="hours-table" class="text-center">
+            <tr>
+              <th>Day</th>
+              <th>Hours</th>
+            </tr>
+            <tr>
+              <td>Monday</td>
+              <td>08:00 - 18:00</td>
+            </tr>
+            <tr>
+              <td>Tuesday</td>
+              <td>08:00 - 18:00</td>
+            </tr>
+            <tr>
+              <td>Wednesday</td>
+              <td>08:00 - 18:00</td>
+            </tr>
+            <tr>
+              <td>Thursday</td>
+              <td>08:00 - 18:00</td>
+            </tr>
+            <tr>
+              <td>Friday</td>
+              <td>08:00 - 18:00</td>
+            </tr>
+            <tr>
+              <td>Saturday</td>
+              <td>08:00 - 18:00</td>
+            </tr>
+            <tr>
+              <td>Sunday</td>
+              <td>08:00 - 18:00</td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
 
   {% if messages %}
   <div class="message-container">
