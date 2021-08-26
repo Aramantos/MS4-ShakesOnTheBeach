@@ -77,8 +77,8 @@
             <a class="text-black nav-link" href="#" id="user-options" data-toggle="dropdown"
               aria-haspopup="true" aria-expanded="false">
               <div class="text-center">
-                <div><i id="user" class="fas fa-user fa-lg"></i></div>
-                <p id="user-text" class="my-0">Account</p>
+                <i id="user" class="fas fa-user fa-lg text-shadow"></i>
+                <p id="user-text" class="my-0 text-shadow">Account</p>
               </div>
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="user-options">
@@ -95,8 +95,8 @@
             <a id="basket-a"
               class="{% if grand_total %}text-info font-weight-bold{% else %}text-black{% endif %} nav-link" href="{% url 'view_basket' %}">
               <div class="text-center">
-                <div><i id="basket" class="fas fa-shopping-bag fa-lg cinnabar"></i></div>
-                <p id="basket-text" class="my-0 cinnabar">
+                <div><i id="basket" class="fas fa-shopping-bag fa-lg text-shadow"></i></div>
+                <p id="basket-text" class="my-0 text-shadow">
                   {% if grand_total %}
                     ${{ grand_total|floatformat:2 }}
                   {% else %}
