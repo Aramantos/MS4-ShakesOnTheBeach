@@ -74,6 +74,11 @@ p{
     transform: translate3d(0, 0, 0);
 }
 
+.text-boxes p,
+.text-boxes ul li{
+    font-size: 1.5rem;
+}
+
 #why,
 #story,
 #contact-info{
@@ -84,6 +89,7 @@ p{
 }
 
 #customer{
+    font-size: 1.5rem;
     margin-top: 0.5rem;
 }
 
@@ -169,3 +175,14 @@ footer{
     background-color: unset;
 }
 
+@media (max-width: 1385px) {
+    #customer {
+        font-size: 1.4rem;
+    }
+}
+
+@media (max-width: 1100px) {
+    #customer {
+        font-size: 1.2rem;
+    }
+}
