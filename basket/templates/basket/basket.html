@@ -56,6 +56,7 @@
                                 </div>
                                 <div class="col-12 col-sm-6">
                                     {% include "basket/quantity-form.html" %}
+                                    {% include "basket/remove-modal-sm.html" %}
                                 </div>
                             </div>
                             <div class="row"><div class="col"><hr></div></div>
@@ -91,6 +92,7 @@
                                     </td>
                                     <td class="py-3 w-25">
                                         {% include "basket/quantity-form.html" %}
+                                        {% include "basket/remove-modal-md.html" %}
                                     </td>
                                     <td class="py-3">
                                         <p class="my-0">${{ item.product.price | calc_subtotal:item.quantity }}</p>

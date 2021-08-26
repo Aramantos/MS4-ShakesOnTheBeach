@@ -22,12 +22,12 @@ body {
     letter-spacing: 1px;
     font-size: 1.5rem;
     background-color: steelblue;
-    text-shadow: 2px 2px black;
+    text-shadow: 0px 0px 5px black;
 }
 
 tr {
     color: aliceblue;
-    text-shadow: 2px 2px black;
+    text-shadow: 0px 0px 5px black;
     font-size: 1.5rem;
     letter-spacing: 2px;
 }
@@ -41,8 +41,57 @@ tr {
     color: aqua!important;
 }
 
+#remove{
+    color: red;
+    font-size: 1.5rem;
+}
+
 .remove-item{
     color: red!important;
+}
+
+.update-link,
+#remove{
+    margin: 0px 1rem;
+}
+
+.modal-content{
+    margin-top: 50%;
+    background-color: #dc3545;
+    color: white;
+    text-shadow: 0 0 5px black;
+}
+
+.modal-title{
+    line-height: 2;
+}
+
+.modal-header button span{
+    color: black;
+    font-size: 2rem;
+    font-family: auto;
+}
+
+#close{
+    font-size: 1.5rem;
+    color: white;
+    text-shadow: 0 0 5px black;
+    letter-spacing: 1px;
+}
+
+#remove-confirm{
+    color: #dc3544;
+    background: aliceblue;
+    padding: 5px 10px;
+    text-shadow: none;
+}
+
+#remove-confirm:hover{
+    color: white!important;
+    background-color: #dc3544;
+    border: 3px solid white;
+    padding: 2px 7px;
+    text-decoration: unset;
 }
 
 .increment-qty,
@@ -90,4 +139,26 @@ tr {
 #menu{
     color: aqua;
     text-shadow: 2px 2px black;
+}
+
+@media (max-width: 1304px) {
+    .update-link,
+    #remove{
+        margin: 0 5%;
+        font-size: 1.2rem;
+    }
+}
+
+@media (max-width: 997px) {
+    .update-link,
+    #remove{
+        margin: 0;
+    }
+}
+
+@media (max-width: 767px) {
+    .update-link,
+    #remove{
+        margin: 5%;
+    }
 }
