@@ -1,7 +1,7 @@
 $(document).ready(function () {
     var hrs = new Date().getHours();
 
-    if (hrs >= 7 && hrs <= 19) {
+    if (hrs >= 8 && hrs <= 18) {
         $('#open4business').text("We are open for business");
         $('#open-closed').text("Order Now");
     } else {
