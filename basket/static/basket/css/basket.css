@@ -79,14 +79,16 @@ tr {
     letter-spacing: 1px;
 }
 
-#remove-confirm{
+.remove-confirm-sm,
+.remove-confirm-md{
     color: #dc3544;
     background: aliceblue;
     padding: 5px 10px;
     text-shadow: none;
 }
 
-#remove-confirm:hover{
+.remove-confirm-sm:hover,
+.remove-confirm-md:hover{
     color: white!important;
     background-color: #dc3544;
     border: 3px solid white;
