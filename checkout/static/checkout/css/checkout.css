@@ -112,4 +112,25 @@ a:hover{
 #checkout-controls{
     display: flex;
     justify-content: space-between;
+    margin-top: 26px!important;
+}
+
+#d-or-c{
+    margin: 0;
+}
+
+#break{
+    display: none;
+}
+
+@media (max-width: 767px) {
+    #checkout-controls{
+        display: unset;
+    }
+}
+
+@media (max-width: 413px) {
+    #break{
+        display: unset;
+    }
 }

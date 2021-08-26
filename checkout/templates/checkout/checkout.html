@@ -25,10 +25,12 @@
                 <div id="checkout-controls">
                     <h2 class="logo-font text-shadow">Checkout</h2>
                     <div class="text-shadow">
-                        Do you want
+                        <p id="d-or-c">
+                        Do you want<br id="break">
                         <button id="delivery-btn" disabled>Delivery</button>
                         or
                         <button id="collection">Collection</button>
+                        </p>
                     </div>
                 </div>
                 <hr>
@@ -137,12 +139,23 @@
                 </form>
                 <form action="{% url 'checkout_collection' %}" method="POST" id="collection-form" class="d-none">
                     {% csrf_token %}
-                    <fieldset class="rounded px-3 mb-5">
-                        <legend class="fieldset-label small text-black px-2 w-auto yellow-text">Details</legend>
+                    <fieldset class="rounded px-3">
+                        <legend class="fieldset-label small text-black px-2 w-auto yellow-text">Collection Information</legend>
                         {{ order_form.full_name | as_crispy_field }}
                         {{ order_form.email | as_crispy_field }}
                         {{ order_form.phone_number | as_crispy_field }}
                     </fieldset>
+                    <div class="form-check form-check-inline float-right mr-0 text-right mb-2">
+                        {% if user.is_authenticated %}
+                            <label class="form-check-label" for="id-save-info">Save this delivery information to my profile</label>
+                            <input class="form-check-input ml-2 mr-0" type="checkbox" id="id-save-info" name="save-info" checked>
+                        {% else %}
+                            <label class="form-check-label" for="id-save-info">
+                                <a class="yellow-text" href="{% url 'account_signup' %}">Create an account</a> or 
+                                <a class="yellow-text" href="{% url 'account_login' %}">login</a> to save this information
+                            </label>
+                        {% endif %}
+                    </div>
                     <div class="submit-button text-right mt-5 mb-2">                    
 						<a id="back-to-basket" href="{% url 'view_basket' %}" class="btn btn-outline-black rounded-0">
 							<span class="icon">
