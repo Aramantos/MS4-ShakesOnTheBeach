@@ -41,8 +41,8 @@
                         <thead>
                             <tr>
                                 <th class="order-headers">Order Number</th>
-                                <th class="order-headers">Date</th>
-                                <th class="order-headers">Items</th>
+                                <th class="d-none d-sm-block order-headers">Date</th>
+                                <th id="items" class="order-headers">Items</th>
                                 <th class="order-headers">Order Total</th>
                             </tr>
                         </thead>
@@ -55,7 +55,7 @@
                                             {{ order.order_number|truncatechars:10 }}
                                         </a>
                                     </td>
-                                    <td>{{ order.date }}</td>
+                                    <td class="d-none d-sm-block">{{ order.date }}</td>
                                     <td>
                                         <ul class="list-unstyled">
                                             {% for item in order.lineitems.all %}

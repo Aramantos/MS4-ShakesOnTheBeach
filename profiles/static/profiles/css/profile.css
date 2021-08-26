@@ -78,3 +78,7 @@ td{
 #profile-update-form input::placeholder {
     color: #aab7c4;
 }
+
+#items{
+    vertical-align: unset;
+}
