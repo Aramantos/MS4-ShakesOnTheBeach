@@ -58,7 +58,7 @@ def edit_image(request, image_id):
             messages.error(request, 'Failed to update image. Please ensure the form is valid.')
     else:
         form = ImageForm(instance=image)
-        messages.info(request, f'You are editing the image for {image.order_number}')
+        messages.info(request, f'You are editing the image for order number {image.order_number}')
 
     template = 'gallery/edit_image.html'
     context = {
