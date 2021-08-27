@@ -19,6 +19,7 @@ def gallery(request):
     return render(request, 'gallery/gallery.html', context)
 
 
+@login_required
 def add_image(request):
     """ Add an image to the gallery """
     if request.method == 'POST':
