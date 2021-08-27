@@ -27,9 +27,14 @@
                 <p class="white-text text-shadow"><strong id="free">Want a chance at a free meal?</strong></p>
                 <p class="white-text text-shadow">Copy your order number</p>
                 {% if request.user.is_authenticated %}
-                    <p class="white-text text-shadow">Take a picture of your meal and upload it <a class="yellow-text" target="_blank" href="{% url 'gallery' %}">here</a></p>
+                    <p class="white-text text-shadow">Take a picture of your meal and upload it 
+                        <a class="yellow-text" target="_blank" rel="noreferrer" href="{% url 'gallery' %}">here</a>
+                    </p>
                 {% else %}
-                    <p class="white-text text-shadow">Create an <a class="yellow-text" target="_blank" href="{% url 'account_signup' %}">account</a>, take a picture of your meal and upload it <a class="yellow-text" target="_blank" href="{% url 'gallery' %}">here</a></p>
+                    <p class="white-text text-shadow">Create an 
+                        <a class="yellow-text" target="_blank" rel="noreferrer" href="{% url 'account_signup' %}">account</a>
+                        , take a picture of your meal and upload it 
+                        <a class="yellow-text" target="_blank" rel="noreferrer" href="{% url 'gallery' %}">here</a></p>
                 {% endif %}
             </div>
         </div>
