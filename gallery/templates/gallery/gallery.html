@@ -43,7 +43,9 @@
                         <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3">
                             <div class="card h-100 border-0">
                                 {% if image.image %}
-                                    <img class="card-img-top img-fluid gallery-image" src="{{ image.image.url }}" alt="{{ image.image }}">
+                                    <a href="{{ image.image.url }}" target="_blank">
+                                        <img class="card-img-top img-fluid gallery-image" src="{{ image.image.url }}" alt="{{ image.image }}">
+                                    </a>
                                 {% endif %}
                                 {% if request.user.is_superuser %}
                                     <div class="card-body item-card-body">
