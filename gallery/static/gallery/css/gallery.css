@@ -3,7 +3,7 @@ body {
     background-size: cover;
     height: calc(100vh - 164px);
     color: white;
-    font-family: 'Anton';
+    font-family: 'Anton', sans-serif;
     letter-spacing: 1px;
     font-size: 1.5rem;
 }
