@@ -1,4 +1,3 @@
-
 from django.shortcuts import render, redirect, reverse, get_object_or_404, HttpResponse
 from django.views.decorators.http import require_POST
 from django.contrib import messages
@@ -39,8 +38,6 @@ def checkout(request):
 
     if request.method == 'POST':
         basket = request.session.get('basket', {})
-        # import pdb
-        # pdb.set_trace()
         form_data = {
             'full_name': request.POST['full_name'],
             'email': request.POST['email'],
@@ -101,7 +98,7 @@ def checkout(request):
             try:
                 profile = UserProfile.objects.get(user=request.user)
                 order_form = OrderForm(initial={
-                    'full_name': profile.user.get_full_name(),
+                    'full_name': profile.full_name,
                     'email': profile.user.email,
                     'phone_number': profile.default_phone_number,
                     'postcode': profile.default_postcode,
@@ -145,6 +142,7 @@ def checkout_success(request, order_number):
         # Save the user's info
         if save_info:
             profile_data = {
+                'full_name': order.full_name,
                 'default_phone_number': order.phone_number,
                 'default_postcode': order.postcode,
                 'default_town_or_city': order.town_or_city,
@@ -222,9 +220,9 @@ def checkout_collection(request):
             try:
                 profile = UserProfile.objects.get(user=request.user)
                 order_collection_form = OrderFormCollection(initial={
-                    'full_name': profile.user.get_full_name(),
+                    'full_name': profile.full_name,
                     'email': profile.user.email,
-                    'phone_number': profile
+                    'phone_number': profile.user.phone_number,
                 })
             except UserProfile.DoesNotExist:
                 order_collection_form = OrderFormCollection()
@@ -255,7 +253,13 @@ def checkout_success_collection(request, order_number):
         # Save the user's info
         if save_info:
             profile_data = {
+                'full_name': order.full_name,
                 'default_phone_number': order.phone_number,
+                'default_postcode': profile.default_postcode,
+                'default_town_or_city': profile.default_town_or_city,
+                'default_street_address1': profile.default_street_address1,
+                'default_street_address2': profile.default_street_address2,
+                'default_county': profile.default_county,
             }
             user_profile_form = UserProfileForm(profile_data, instance=profile)
             if user_profile_form.is_valid():
