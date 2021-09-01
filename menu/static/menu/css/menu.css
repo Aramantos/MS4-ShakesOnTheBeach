@@ -4,73 +4,74 @@ body {
     height: calc(100vh - 164px);
     color: #555;
     font-family: 'Anton', sans-serif;
-    
-#menu{
-    color: darkred!important;
+}
+
+#menu {
+    color: darkred !important;
     text-transform: uppercase;
     text-shadow: 2px 2px white;
 }
 
-#menu-navbar{
-    background-color: #f8c7cce3!important;
+#menu-navbar {
+    background-color: #f8c7cce3 !important;
 }
 
-.menu-navbar-items{
+.menu-navbar-items {
     background-color: #d8a8aca6;
 }
 
-#navbarNav{
-    justify-content: space-evenly!important;
+#navbarNav {
+    justify-content: space-evenly !important;
     letter-spacing: 1px;
 }
 
-.navbar-nav{
+.navbar-nav {
     text-align: center;
 }
 
-.nav-item a{
-    color: white!important;
+.nav-item a {
+    color: white !important;
     font-size: 1.5rem;
     text-shadow: 2px 2px darkred;
 }
 
-.nav-item a:hover{
-    color: darkred!important;
+.nav-item a:hover {
+    color: darkred !important;
     font-size: 1.5rem;
     text-shadow: 2px 2px white;
 }
 
-.btt-button{
+.btt-button {
     background-color: #F8C7CC;
-    border: 1px solid darkred!important;
+    border: 1px solid darkred !important;
 }
 
-#arrow{
-    color: darkred!important;
+#arrow {
+    color: darkred !important;
 }
 
 .item-image,
-#item-image-info{
-    height: 50vh!important;
+#item-image-info {
+    height: 50vh !important;
 }
 
-.card-body{
+.card-body {
     background-color: #E0BC9C;
 }
 
-.item-card-body{
+.item-card-body {
     font-size: x-large;
     letter-spacing: 1px;
     color: white;
     text-shadow: 2px 2px #000;
 }
 
-#item-details-container{
+#item-details-container {
     margin-top: 15px;
     background-color: #faebd7a1;
 }
 
-.product-details-container{
+.product-details-container {
     text-align: -webkit-center;
     background-color: #f1ba86;
     box-shadow: 6px 6px #69523b;
@@ -79,55 +80,55 @@ body {
 
 #product-name,
 #price,
-#category{
-    color: white!important;
+#category {
+    color: white !important;
     font-size: 1.5rem;
     text-shadow: 2px 2px darkred;
 }
 
 #product-desc,
-#quantity{
+#quantity {
     font-size: 1.2rem;
     color: darkred;
 }
 
 .up-btn,
-.down-btn{
+.down-btn {
     color: white;
     background-color: darkred;
 }
 
-#back-arrow-menu{
+#back-arrow-menu {
     font-size: 1.7rem;
     color: darkred;
 }
 
-#back-menu{
+#back-menu {
     font-size: 1.5rem;
     color: darkred;
 }
 
-#add-basket{
+#add-basket {
     font-size: 1.2rem;
     color: white;
     background-color: darkred;
 }
 
-#add-basket:hover{
+#add-basket:hover {
     color: darkred;
     background-color: white;
 }
 
-#delivery-delta{
+#delivery-delta {
     background-color: #b04b34;
     text-align: center;
-    color: #fcf32c!important;
+    color: #fcf32c !important;
 }
 
 .navbar-light .navbar-toggler {
     border: 2px solid #766368;
 }
 
-#menu-nav-hr{
+#menu-nav-hr {
     border-top: 4px solid rgb(118 99 104 / 62%);
 }

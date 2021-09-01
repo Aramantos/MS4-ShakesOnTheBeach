@@ -262,6 +262,7 @@
 {% endblock %}
 
 {% block postloadjs %}
+{{ block.super }}
     <script>
         function clipboard() {
         copyText = document.getElementById("copy");
