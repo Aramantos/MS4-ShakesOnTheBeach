@@ -8,6 +8,7 @@ body {
 }
 
 #profile-container{
+    padding-top: 0!important;
     background-color: #fb305957;
     padding: 20px;
 }
@@ -81,4 +82,8 @@ td{
 
 #items{
     vertical-align: unset;
+}
+
+.order-item{
+    color: #007bff;
 }
