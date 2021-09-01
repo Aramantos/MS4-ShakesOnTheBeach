@@ -3,6 +3,9 @@ from django.views.decorators.http import require_POST
 from django.contrib import messages
 from django.conf import settings
 
+from django.core.mail import send_mail
+from django.template.loader import render_to_string
+
 from .forms import OrderForm, OrderFormCollection
 from .models import Order, OrderLineItem
 
@@ -169,6 +172,29 @@ def checkout_success(request, order_number):
     return render(request, template, context)
 
 
+# class collection_Handler:
+#     """Handle collectiong orders"""
+
+#     def __init__(self, request):
+#         self.request = request
+
+#     def _send_collection_confirmation_email(self, order):
+#         """Send the user a confirmation email"""
+#         cust_email = order.email
+#         subject = render_to_string(
+#             'checkout/confirmation_emails/confirmation_email_subject.txt',
+#             {'order': order})
+#         body = render_to_string(
+#             'checkout/confirmation_emails/collection_confirmation_email_body.txt',
+#             {'order': order, 'contact_email': settings.DEFAULT_FROM_EMAIL})
+
+#         send_mail(
+#             subject,
+#             body,
+#             settings.DEFAULT_FROM_EMAIL,
+#             [cust_email]
+#         )
+
 def checkout_collection(request):
     if request.method == 'POST':
         basket = request.session.get('basket', {})
@@ -265,6 +291,8 @@ def checkout_success_collection(request, order_number):
             if user_profile_form.is_valid():
                 user_profile_form.save()
 
+    send_collection_confirmation_email(order)
+
     messages.success(request, f'Order successfully processed! \
         Your order number is {order_number}. A confirmation \
         email will be sent to {order.email}.')
@@ -278,3 +306,22 @@ def checkout_success_collection(request, order_number):
     }
 
     return render(request, template, context)
+
+
+def send_collection_confirmation_email(order):
+    cust_email = order.email
+
+    subject = render_to_string(
+        'checkout/confirmation_emails/confirmation_email_subject.txt',
+        {'order': order})
+
+    body = render_to_string(
+        'checkout/confirmation_emails/collection_confirmation_email_body.txt',
+        {'order': order, 'contact_email': settings.DEFAULT_FROM_EMAIL})
+
+    send_mail(
+        subject,
+        body,
+        settings.DEFAULT_FROM_EMAIL,
+        [cust_email]
+    )
