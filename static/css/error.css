@@ -1,0 +1,21 @@
+body {
+    background: url('/media/error-image.jpeg') no-repeat center center fixed;
+    background-size: cover;
+    height: calc(100vh - 164px);
+    color: #5bbcd7;
+    text-shadow: 0 0 5px black;
+    font-family: 'Anton', sans-serif;
+}
+
+#error-body{
+    margin-top: 30vh;
+}
+
+h3{
+    margin-bottom: 5vh;
+}
+
+.fa-shoe-prints{
+    color: #5abdd7;
+    font-size: 3rem;
+}
