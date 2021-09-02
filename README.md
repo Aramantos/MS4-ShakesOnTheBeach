@@ -1157,8 +1157,10 @@ Error Pages:
 ---
 
 Automated testing is implemented to support manual testing during the development process. The intent was not to achieve 100% coverage with automated testing, but more to support and complement the manual testing, paying more attention to the more fragile code pieces and testing them.       
+
 Unit tests can be found in the `test_views.py`, `test_forms.py` files of applicable applications within the repository.     
-*Note:* The tests should be added in the local database, as The Heroku hobby-tier does not give permissions to allow the creation of databases that are required for python automated testing. To run the test and check the output, the database (Postgres) code configuration in `settings.py` should be temporarily removed or commented out.     
+
+**Note:** The tests should be added in the local database, as The Heroku hobby-tier does not give permissions to allow the creation of databases that are required for python automated testing. To run the test and check the output, the database (Postgres) code configuration in `settings.py` should be temporarily removed or commented out.     
 - **Command used to run the tests**:    
 `python3 manage.py test`   
 - To run the tests within a specific app only:
@@ -1167,9 +1169,58 @@ Unit tests can be found in the `test_views.py`, `test_forms.py` files of applica
 - to generate a coverage report run the following command: `coverage report`
 - to generate the HTML file run the following command:  `coverage html` and open index.html file in the newly created directory, run the file in the browser to see the output. 
 
-#### Travis
+### Travis
 
 [Travis](https://travis-ci.org/) implemented for unit testing of this project to provide continuous integration with the deployed site when pushing code to GitHub. It is configured via the `.travis.yml` file. All information about how to set it up can be found in [Travis Documentation](https://docs.travis-ci.com/).
+
+### Selenium IDE and PyTest
+Selenium IDE runs automated, and scripted tests when configured. In this case the Selenium IDE recording function is used to create the scripts, the scripts are exported to PyTest code, and then run to validate the test cases.
+
+I have moved the test files into a folder named "selenium", these files can be moved into the root directory after cloning the repository.
+
+To prepare for the tests:
+* Install pytest, selenium and the correct webdriver (ChromeDriver)
+	* pip3 install pytest
+	* pip3 install selenium
+	* http://chromedriver.chromium.org/downloads
+		* Unzip and copy 'chromedriver 2' to the virtual Python/bin directory. Rename it to 'chromedriver'.
+		* Execute chromedriver in the terminal to ensure the correct version is running; it has to match the version in "About Google Chrome". If using other browsers, other webdrivers must be installed. Don't do "pip3 install ChromeDriver" as it's likely to install an older version which means that the tests won't run as Chrome can't be controlled.
+
+|         Test Case - User Profiles         | Result |
+|:-----------------------------------------:|:------:|
+|          Create a User Profile            |  Pass  |
+|    Logging in with a verified account     |  Pass  |
+|       Logging out of a User Profile       |  Pass  |
+
+---
+
+#### File Name: **test_userProfiles.py**
+
+---
+
+|                 Test Case - Creating an Order                | Result |
+|:------------------------------------------------------------:|:------:|
+|                Adding a product to the basket                |  Pass  |
+|       Updating the quantity of a product in the basket       |  Pass  |
+|              Removing a product from the basket              |  Pass  |
+|             Taking a basket to the checkout page             |  Pass  |
+| Filling out the form and payment details to process an order |  Pass  |
+
+---
+
+#### File Name: **test_creatinganOrder.py**
+
+---
+|              Test Case - Error Testing             | Result |
+|:--------------------------------------------------:|:------:|
+| Trying to create a user with an already used e-mail |  Pass  |
+|     Trying to log in with an unverified profile    |  Pass  |
+|            Trying to access the checkout page without any items in your basket            |  Pass  |
+| Trying to access the profile page without having signed into a account throws a 404 error |  Pass  |
+
+---
+
+#### File Name: **test_errorTesting.py**
 
 ---
 
@@ -1198,9 +1249,6 @@ Unit tests can be found in the `test_views.py`, `test_forms.py` files of applica
 #### **Unresolved**
 
 - When attempted to edit or view orders in the Django admin ("") I get the error message ("'NoneType' object has no attribute 'username'") - This does not happen in the deployed Heroku application so it must be an error in the sql database that I am not sure how to solve.
-- 
-- 
-- 
 
 [Return to Table of Contents](#table-of-contents)
 
@@ -1408,7 +1456,7 @@ DATABASES = {
         'default': dj_database_url.parse("<your Postrgres database URL here>")     
     }
 ```
-Important Note: that's just a temporary set-up, this URL **should not be committed and published to GitHub** for security reasons, so make sure not to commit your changes to Git while the URL is in the settings.py.  
+**Important Note:** that's just a temporary set-up, this URL **should not be committed and published to GitHub** for security reasons, so make sure not to commit your changes to Git while the URL is in the settings.py.  
 
 9. Migrate the database models to the Postgres database using the following commands in the terminal:    
 `python3 manage.py makemigrations`     
@@ -1421,8 +1469,9 @@ Important Note: that's just a temporary set-up, this URL **should not be committ
 11. Create a **superuser** for the Postgres database by running the following command(*you need to follow the instructions and inserting username, email and password*):      
 
     `python3 manage.py createsuperuser`     
-12. You need to remove your Postgres URL database from the settings and uncomment the default DATABASE settings code in the settings.py file.    
-Note: for production, you get the environment variable 'DATABASE_URL' from the Heroku Config Vars and use Postgress database, while for development you use SQLite as a default database.     
+12. You need to remove your Postgres URL database from the settings and uncomment the default DATABASE settings code in the settings.py file. 
+   
+    **Note:** for production, you get the environment variable 'DATABASE_URL' from the Heroku Config Vars and use Postgress database, while for development you use SQLite as a default database.     
 
 13. Add your Heroku app URL to **ALLOWED_HOSTS** in the settings.py file.
 
