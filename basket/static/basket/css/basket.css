@@ -107,7 +107,8 @@ tr {
     background: black;
 }
 
-#arrow{
+#arrow,
+#arrow-left{
     color: aqua;
     text-shadow: 2px 2px 6px black;
     font-size: 1.5rem;
