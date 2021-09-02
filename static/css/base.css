@@ -113,7 +113,7 @@ body {
 #umbrella:hover,
 #logo-text:hover,
 .fa-caret-down:hover {
-    color: #f089d6;
+    color: #bae6fd;
     text-shadow: 0 0 5px black;
 }
 
@@ -145,7 +145,7 @@ body {
 #user-text:hover,
 #basket-a div i:hover,
 #basket-a div p:hover {
-    color: #f089d6;
+    color: #bae6fd;
 }
 
 #user-text,
