@@ -7,50 +7,50 @@ body {
     font-size: 1.5rem;
 }
 
-#form{
+#form {
     background-color: #f2edf180;
     box-shadow: 6px 6px #900e76;
 }
 
 #sign-in,
 #sign-up,
-#password-reset{
-    text-align: center!important;
+#password-reset {
+    text-align: center !important;
     color: #900f76;
     text-shadow: 0px 0px 6px #9fcbee;
 }
 
 #no-account,
-#account-already{
-    text-align: center!important;
-    color: steelblue!important;
+#account-already {
+    text-align: center !important;
+    color: steelblue !important;
 }
 
 #no-account a,
-#account-already a{
+#account-already a {
     color: #900f76;
     text-shadow: 0px 0px 6px #9fcbee;
 }
 
-#id_remember{
+#id_remember {
     margin-top: 11px;
 }
 
 #menu,
 #login,
-#cancel-text{
+#cancel-text {
     font-size: 1.8rem;
     color: #900f76;
 }
 
 #menu:hover,
-#login:hover{
+#login:hover {
     text-decoration: underline;
 }
 
 #menu-icon,
 #login-icon,
-#cancel{
+#cancel {
     font-size: 2.06rem;
 }
 
@@ -58,7 +58,7 @@ body {
 #submit,
 #change-password,
 #confirm,
-#sign-out{
+#sign-out {
     text-align: center;
     color: #900f76;
     text-shadow: 0px 0px 6px #9fcbee;
@@ -72,12 +72,12 @@ body {
 #submit:hover,
 #change-password:hover,
 #confirm:hover,
-#sign-out:hover{
+#sign-out:hover {
     color: aliceblue;
     background-color: #900f76;
 }
 
-.password_change{
+.password_change {
     padding-bottom: 10px;
 }
 
@@ -97,16 +97,17 @@ body {
 /* --------------------------------- Media Queries */
 
 @media (max-width: 1200px) {
-    #form{
+    #form {
         margin-left: 70%;
     }
 }
 
 @media (max-width: 991px) {
-    #allauth-container{
+    #allauth-container {
         padding-top: 200px;
     }
-    #form{
+
+    #form {
         margin-left: 0;
     }
 }

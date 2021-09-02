@@ -38,41 +38,44 @@ tr {
 }
 
 .update-link {
-    color: aqua!important;
+    color: aqua !important;
 }
 
-#remove{
-    color: red;
+#remove {
+    color: #bd2130;
+    background-color: #f7f796;
+    padding: 0 5px;
+    text-shadow: none;
     font-size: 1.5rem;
 }
 
-.remove-item{
-    color: red!important;
+.remove-item {
+    color: red !important;
 }
 
 .update-link,
-#remove{
+#remove {
     margin: 0px 1rem;
 }
 
-.modal-content{
+.modal-content {
     margin-top: 50%;
     background-color: #dc3545;
     color: white;
     text-shadow: 0 0 5px black;
 }
 
-.modal-title{
+.modal-title {
     line-height: 2;
 }
 
-.modal-header button span{
+.modal-header button span {
     color: black;
     font-size: 2rem;
     font-family: auto;
 }
 
-#close{
+#close {
     font-size: 1.5rem;
     color: white;
     text-shadow: 0 0 5px black;
@@ -80,7 +83,7 @@ tr {
 }
 
 .remove-confirm-sm,
-.remove-confirm-md{
+.remove-confirm-md {
     color: #dc3544;
     background: aliceblue;
     padding: 5px 10px;
@@ -88,8 +91,8 @@ tr {
 }
 
 .remove-confirm-sm:hover,
-.remove-confirm-md:hover{
-    color: white!important;
+.remove-confirm-md:hover {
+    color: white !important;
     background-color: #dc3544;
     border: 3px solid white;
     padding: 2px 7px;
@@ -97,71 +100,74 @@ tr {
 }
 
 .increment-qty,
-.decrement-qty{
+.decrement-qty {
     background: aqua;
 }
 
 .increment-qty:hover,
-.decrement-qty:hover{
+.decrement-qty:hover {
     color: aqua;
     background: black;
 }
 
 #arrow,
-#arrow-left{
+#arrow-left {
     color: aqua;
     text-shadow: 2px 2px 6px black;
     font-size: 1.5rem;
 }
 
-#back-to-menu{
+#back-to-menu {
     color: aqua;
 }
 
-#checkout{
+#checkout {
     color: aqua;
     background: white;
     text-shadow: 0px 0px 4px black;
 }
 
-#checkout:hover{
+#checkout:hover {
     color: white;
     background: aqua;
 }
 
-#delivery-delta{
+#delivery-delta {
     background-color: steelblue;
     text-align: center;
-    color: #fcf32c!important;
+    color: #fcf32c !important;
 }
 
-#arrow-btn{
+#arrow-btn {
     background-color: steelblue;
 }
 
-#menu{
+#menu {
     color: aqua;
     text-shadow: 2px 2px black;
 }
 
-@media (max-width: 1304px) {
+@media (max-width: 1354px) {
+
     .update-link,
-    #remove{
+    #remove {
         margin: 0 5%;
         font-size: 1.2rem;
     }
 }
 
 @media (max-width: 997px) {
+
     .update-link,
-    #remove{
+    #remove {
         margin: 0;
     }
 }
 
 @media (max-width: 767px) {
+
     .update-link,
-    #remove{
+    #remove {
         margin: 5%;
     }
 }

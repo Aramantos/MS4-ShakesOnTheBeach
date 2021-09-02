@@ -8,31 +8,31 @@ body {
     letter-spacing: 1.5px;
 }
 
-#checkout-container{
+#checkout-container {
     background-color: #ff7f5078;
 }
 
 .StripeElement,
 .stripe-style-input {
-  box-sizing: border-box;
-  height: 40px;
-  padding: 10px 12px;
-  border: 1px solid transparent;
-  border-radius: 0px;
-  background-color: white;
-  box-shadow: 0 1px 3px 0 #e6ebf1;
-  -webkit-transition: box-shadow 150ms ease;
-  transition: box-shadow 150ms ease;
+    box-sizing: border-box;
+    height: 40px;
+    padding: 10px 12px;
+    border: 1px solid transparent;
+    border-radius: 0px;
+    background-color: white;
+    box-shadow: 0 1px 3px 0 #e6ebf1;
+    -webkit-transition: box-shadow 150ms ease;
+    transition: box-shadow 150ms ease;
 }
 
 .StripeElement--focus,
 .stripe-style-input:focus,
 .stripe-style-input:active {
-  box-shadow: 0 1px 3px 0 #cfd7df;
+    box-shadow: 0 1px 3px 0 #cfd7df;
 }
 
 .StripeElement--webkit-autofill {
-  background-color: #fefde5 !important;
+    background-color: #fefde5 !important;
 }
 
 .stripe-style-input::placeholder {
@@ -61,8 +61,8 @@ select option[value=""] {
 }
 
 #loading-overlay {
-	display: none;
-	position: fixed;
+    display: none;
+    position: fixed;
     top: 0;
     left: 0;
     width: 100%;
@@ -72,20 +72,20 @@ select option[value=""] {
 }
 
 .loading-spinner {
-	display: flex;
+    display: flex;
     align-items: center;
     justify-content: center;
     margin: 0;
     height: 100%;
 }
 
-#back-to-basket{
+#back-to-basket {
     color: #fcf32c;
     font-size: 1.5rem;
 }
 
 #submit-button,
-#collect-submit{
+#collect-submit {
     background-color: white;
     color: #fcf32c;
     text-shadow: 0px 0px 6px black;
@@ -93,44 +93,45 @@ select option[value=""] {
 }
 
 #submit-button:hover,
-#collect-submit:hover{
+#collect-submit:hover {
     background-color: #fcf32c;
     color: white;
 }
 
-.checkout-image{
+.checkout-image {
     height: 60px;
 }
 
-.lock{
+.lock {
     font-size: 1.8rem;
 }
-a:hover{
+
+a:hover {
     color: #fcf32c;
 }
 
-#checkout-controls{
+#checkout-controls {
     display: flex;
     justify-content: space-between;
-    margin-top: 26px!important;
+    margin-top: 26px !important;
 }
 
-#d-or-c{
+#d-or-c {
     margin: 0;
 }
 
-#break{
+#break {
     display: none;
 }
 
 @media (max-width: 767px) {
-    #checkout-controls{
+    #checkout-controls {
         display: unset;
     }
 }
 
 @media (max-width: 413px) {
-    #break{
+    #break {
         display: unset;
     }
 }

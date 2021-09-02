@@ -8,39 +8,39 @@ body {
     font-size: 1.5rem;
 }
 
-.logo-font{
+.logo-font {
     color: #ffed07;
 }
 
-#gallery-header{
+#gallery-header {
     background-color: #75bfd4e0;
     max-width: 90%;
     margin: auto;
 }
 
-a{
+a {
     color: unset;
 }
 
-a:hover{
+a:hover {
     color: unset;
 }
 
-#title{
-    color: #ffed07!important;
+#title {
+    color: #ffed07 !important;
     font-size: 3rem;
 }
 
-#gallery-controls{
+#gallery-controls {
     display: flex;
     justify-content: space-evenly;
 }
 
-.gallery-image{
-    height: 50vh!important;
+.gallery-image {
+    height: 50vh !important;
 }
 
-#add-btn{
+#add-btn {
     margin-top: 2px;
     color: #fcfef8;
     background-color: #feed04;
@@ -48,116 +48,116 @@ a:hover{
     letter-spacing: 3px;
 }
 
-#add-btn:hover{
+#add-btn:hover {
     color: #feed04;
     background-color: #fcfef8;
 }
 
 #add-image-container,
-#edit-image-container{
+#edit-image-container {
     background-color: #75bfd4;
     max-width: 70%;
     margin: auto;
 }
 
-#add-image-title{
+#add-image-title {
     display: flex;
     justify-content: space-evenly;
 }
 
-label{
+label {
     text-shadow: 0 0 5px black;
 }
 
-.form-control{
+.form-control {
     width: 80%;
     margin: auto;
     text-shadow: none;
 }
 
-.form-control-file{
+.form-control-file {
     text-shadow: 0 0 5px black;
     letter-spacing: 1px;
 }
 
-#add-image-btns{
+#add-image-btns {
     display: flex;
     justify-content: space-evenly;
 }
 
 #cancel,
 #add-image,
-#close{
+#close {
     font-size: 1.5rem;
     color: white;
     text-shadow: 0 0 5px black;
     letter-spacing: 1px;
 }
 
-#add-image{
+#add-image {
     background-color: #feed04;
 }
 
-#add-image:hover{
+#add-image:hover {
     color: #feed04;
     background-color: white;
 }
 
-.card{
+.card {
     background: none;
 }
 
-.card-body{
+.card-body {
     background-color: #5aa5b9c7;
     padding: 0;
 }
 
-.card-body p{
+.card-body p {
     margin-top: 17px;
 }
 
-.card-body p a{
+.card-body p a {
     font-size: 1.8rem;
     letter-spacing: 2px;
     margin: 0 8%;
     text-shadow: 0 0 5px black;
 }
 
-#delete{
-    color: #ff0018!important;
+#delete {
+    color: #ff0018 !important;
 }
 
-input{
+input {
     text-shadow: 0 0 5px black;
     width: 70%;
     margin: auto;
 }
 
-.modal-content{
+.modal-content {
     margin-top: 50%;
     background-color: #dc3545;
     color: white;
     text-shadow: 0 0 5px black;
 }
 
-.modal-title{
+.modal-title {
     line-height: 2;
 }
 
-.modal-header button span{
+.modal-header button span {
     color: black;
     font-size: 2rem;
     font-family: auto;
 }
 
-#delete-confirm{
+#delete-confirm {
     color: #dc3544;
     background: aliceblue;
     padding: 5px 10px;
     text-shadow: none;
 }
 
-#delete-confirm:hover{
+#delete-confirm:hover {
     color: white;
     background-color: #dc3544;
     border: 3px solid white;
@@ -166,14 +166,14 @@ input{
 }
 
 @media (min-width: 768px) {
-    .form-control-file{
+    .form-control-file {
         width: 80%;
         margin: auto;
     }
 }
 
 @media (max-width: 768px) {
-    .form-control{
+    .form-control {
         width: 100%;
     }
 }

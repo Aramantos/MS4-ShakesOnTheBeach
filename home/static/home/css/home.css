@@ -1,13 +1,13 @@
-#home-text-container{
+#home-text-container {
     display: flex;
     justify-content: flex-end;
 }
 
-#home-text{
+#home-text {
     padding: 0;
 }
 
-#open4business{
+#open4business {
     font-family: 'Anton', sans-serif;
     width: 80%;
     float: right;
