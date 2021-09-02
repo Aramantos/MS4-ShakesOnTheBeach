@@ -103,8 +103,16 @@ body {
     display: flex;
 }
 
+.fa-caret-down{
+    font-size: 2rem;
+    margin: 2.5% 1.3% 0;
+    color: white;
+    text-shadow: 2px 2px black;
+}
+
 #umbrella:hover,
-#logo-text:hover{
+#logo-text:hover,
+.fa-caret-down:hover{
     color: #f8c7ec;
 }
 
