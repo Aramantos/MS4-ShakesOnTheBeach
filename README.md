@@ -1184,7 +1184,51 @@ To prepare for the tests:
 	* pip3 install selenium
 	* http://chromedriver.chromium.org/downloads
 		* Unzip and copy 'chromedriver 2' to the virtual Python/bin directory. Rename it to 'chromedriver'.
-		* Execute chromedriver in the terminal to ensure the correct version is running; it has to match the version in "About Google Chrome". If using other browsers, other webdrivers must be installed. Don't do "pip3 install ChromeDriver" as it's likely to install an older version which means that the tests won't run as Chrome can't be controlled.
+		* Execute chromedriver in the terminal to ensure the correct version is running; it has to match the version in "About Google Chrome". If using other browsers, other webdrivers must be installed. Don't do "pip3 install ChromeDriver" as it's likely to install an older version which means that the tests 
+    won't run as Chrome can't be controlled.
+
+---
+
+<details><summary>Click to expand: '.env' variables for testing</summary>
+
+```
+TEST_LINK=<url you want to run the tests on, development or deployed>
+
+#creating an order tests
+ORDER_NAME=<order full name>
+ORDER_EMAIL=<order email address>
+ORDER_PHONE_NUMBER=<order phone number>
+ORDER_ADDRESS1=<order street address 1>
+ORDER_ADDRESS2=<order street address 2>
+ORDER_TOWN_CITY=<order town or city>
+ORDER_POSTCODE=<order postcode>
+ORDER_COUNTY=<order county, state or locality>
+
+#user profile tests
+
+CREATE_EMAIL=<new email>
+CREATE_USERNAME=<new profile username>
+CREATE_PASSWORD=<new profile password>
+
+VERIFIED_EMAIL=<verified profile email>
+VERIFIED_PASSWORD=<verified profile password>
+
+#error testing
+
+USED_EMAIL=<already used email>
+USED_USERNAME=<already used profile username>
+USED_PASSWORD=<already used profile password>
+
+UNVERIFIED_EMAIL=<unverified email>
+UNVERIFIED_PASSWORD=<unverified profile password>
+```
+</details>
+
+---
+
+#### File Name: **test_userProfiles.py**
+
+---
 
 |         Test Case - User Profiles         | Result |
 |:-----------------------------------------:|:------:|
@@ -1194,7 +1238,7 @@ To prepare for the tests:
 
 ---
 
-#### File Name: **test_userProfiles.py**
+#### File Name: **test_creatinganOrder.py**
 
 ---
 
@@ -1208,7 +1252,7 @@ To prepare for the tests:
 
 ---
 
-#### File Name: **test_creatinganOrder.py**
+#### File Name: **test_errorTesting.py**
 
 ---
 |              Test Case - Error Testing             | Result |
@@ -1217,10 +1261,6 @@ To prepare for the tests:
 |     Trying to log in with an unverified profile    |  Pass  |
 |            Trying to access the checkout page without any items in your basket            |  Pass  |
 | Trying to access the profile page without having signed into a account throws a 404 error |  Pass  |
-
----
-
-#### File Name: **test_errorTesting.py**
 
 ---
 
