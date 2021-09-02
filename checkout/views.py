@@ -171,6 +171,7 @@ def checkout_success(request, order_number):
 
     return render(request, template, context)
 
+
 def checkout_collection(request):
     if request.method == 'POST':
         basket = request.session.get('basket', {})
