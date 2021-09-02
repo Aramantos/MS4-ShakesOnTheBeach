@@ -6,7 +6,7 @@ body {
     font-family: 'Anton', sans-serif;
 }
 
-.row {
+#error-row {
     width: 80% !important;
     margin: auto;
 }
@@ -14,16 +14,21 @@ body {
 #error-body {
     margin-top: 35vh;
     text-shadow: 0 0 5px black;
+    background: #4b5a67ba;
 }
 
 h3 {
+    font-size: 3rem;
     margin-bottom: 3rem;
+}
+
+h4{
+    font-size: 2rem;
 }
 
 #shoe-prints {
     animation-name: footprints;
     animation-duration: 1s;
-    animation-direction: alternate;
     animation-iteration-count: infinite;
 }
 

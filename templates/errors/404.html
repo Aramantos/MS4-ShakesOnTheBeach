@@ -9,7 +9,7 @@
 
 <!-- 404 Error handler, for easy navigation if a user enters incorrect URL-->
 <div class="container-fluid">
-    <div class="row ">
+    <div id="error-row" class="row">
         <div id="error-body" class="col-12 text-center">
             <h3 class="mt-5">
                 Oops! Looks like you came to the wrong beach...
@@ -18,6 +18,8 @@
                 Its another 404 metres up the shore
             </h4>
             <a id="shoe-prints" href="{% url 'home' %}" class="btn btn-lg mt-5">
+                <i class="fas fa-shoe-prints"></i>
+                <button>Start Walking</button>
                 <i class="fas fa-shoe-prints"></i>
             </a>
         </div>
